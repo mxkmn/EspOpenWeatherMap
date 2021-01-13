@@ -1,0 +1,18 @@
+# Syntax coloring map
+
+# Datatypes (KEYWORD1)
+OWM_for_ESP	KEYWORD1
+
+# Methods and Functions (KEYWORD2)
+getWeather KEYWORD2
+getCurrentWeather KEYWORD2
+getFullWeather KEYWORD2
+
+# Structures (KEYWORD3)
+OWM_current  KEYWORD3
+OWM_hourly   KEYWORD3
+OWM_daily    KEYWORD3
+
+# Constants (LITERAL1)
+MAX_HOURS   LITERAL1
+MAX_DAYS    LITERAL1
