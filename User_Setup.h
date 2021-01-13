@@ -9,7 +9,7 @@
 // These parameters affect the information output
 #define LOG_ERRORS // Define if you want to check serial messages of errors
 #define LOG_TIME // Define if you want to know the time of receiving the weather
-#define LOG_UNNECESSARY_INFO // Define if you want to check serial messages of progress and URLs
+//#define LOG_UNNECESSARY_INFO // Define if you want to check serial messages of progress and URLs
 //#define SHOW_HEADER   // Debug only - for checking response header via serial message
 //#define SHOW_JSON     // Debug only - simple serial output formatting of whole JSON message
 //#define SHOW_CALLBACK // Debug only to show the decode tree
