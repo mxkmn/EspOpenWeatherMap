@@ -8,11 +8,22 @@
     imperial uses Fahrenheit units and miles/hour
 
 
+
+    [OWM_Weather] optional (default is "full")
+
+    supported types of API is "current" and "full"
+
+    current https://openweathermap.org/weather-data
+    full https://openweathermap.org/api/one-call-api
+
+
+
     [language] optional (default is "en")
 
     Return summary properties in the desired language.
     (Note that units in the summary will be set according to the units parameter,
-    so be sure to set both parameters appropriately.) language may be:
+    so be sure to set both parameters appropriately.)
+    Language may be:
 
     af: Africans
     ar: Arabic
@@ -59,12 +70,4 @@
     zh_cn: Chinese Simplified
     zh-tw: Chinese Traditional
     zu: Zulu
-
-
-    [OWM_Weather] optional (default is "full")
-
-    supported types of API is "current" and "full"
-
-    current https://openweathermap.org/weather-data
-    full https://openweathermap.org/api/one-call-api
 */

@@ -53,10 +53,12 @@ typedef struct OWM_hourly { // Structure for hourly weather
   uint32_t dt[MAX_HOURS] = { 255 };
   float    temp[MAX_HOURS] = { 255 };
   float    feels_like[MAX_HOURS] = { 255 };
-  float    pressure[MAX_HOURS] = { 255 };
+  uint16_t pressure[MAX_HOURS] = { 255 };
   uint8_t  humidity[MAX_HOURS] = { 255 };
   float    dew_point[MAX_HOURS] = { 255 };
+  float    uvi[MAX_HOURS] = { 255 };
   uint8_t  clouds[MAX_HOURS] = { 255 };
+  uint16_t visibility[MAX_HOURS] = { 255 };
   float    wind_speed[MAX_HOURS] = { 255 };
   float    wind_gust[MAX_HOURS] = { 255 };
   uint16_t wind_deg[MAX_HOURS] = { 255 };
@@ -77,6 +79,9 @@ typedef struct OWM_daily { // Structure for daily weather
   uint32_t dt[MAX_DAYS] = { 255 };  // dt
   uint32_t sunrise[MAX_DAYS] = { 255 };
   uint32_t sunset[MAX_DAYS] = { 255 };
+  uint32_t moonrise[MAX_DAYS] = { 255 };
+  uint32_t moonset[MAX_DAYS] = { 255 };
+  float    moon_phase[MAX_DAYS] = { 255 };
   
   // daily.temp
   float    temp_morn[MAX_DAYS] = { 255 };
@@ -93,7 +98,7 @@ typedef struct OWM_daily { // Structure for daily weather
   float    feels_like_night[MAX_DAYS] = { 255 };
 
   // daily
-  float    pressure[MAX_DAYS] = { 255 };
+  uint16_t pressure[MAX_DAYS] = { 255 };
   uint8_t  humidity[MAX_DAYS] = { 255 };
   float    dew_point[MAX_DAYS] = { 255 };
   float    wind_speed[MAX_DAYS] = { 255 };
