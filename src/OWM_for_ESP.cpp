@@ -1,30 +1,13 @@
+#include <sntp.h> // used for secure connection on ESP8266, only to get time from web
+
 // The streaming parser to use is not the Arduino IDE library manager default, but this one which
 // is slightly different and renamed to avoid conflicts: https://github.com/Bodmer/JSON_Decoder
 #include <JSON_Listener.h>
 #include <JSON_Decoder.h>
 
-#include <sntp.h> // only to get time (used for secure connection)
-
 #include "OWM_for_ESP.h"
 
-#if defined(ESP8266)
-  #include <ESP8266WiFi.h>
-  #ifdef SECURE_CONNECTION
-    BearSSL::WiFiClientSecure client;
-  #else
-    WiFiClient client;
-  #endif
-#elif defined(ESP32)
-  #ifdef SECURE_CONNECTION
-    #include <WiFiClientSecure.h>
-    WiFiClientSecure client;
-  #else
-    #include <WiFi.h>
-    WiFiClient client;
-  #endif
-#endif
-
-const char* host = "api.openweathermap.org";
+const char* HOST = "api.openweathermap.org";
 
 // This certificate will be valid until 2038, then it should be replaced with a new one.
 // If you want to get new certificates, check the python code: https://youtu.be/Wm1xKj4bKsY?t=869
@@ -64,6 +47,40 @@ const char* ROOT_CA = \
 "jjxDah2nGN59PRbxYvnKkKj9\n" \ 
 "-----END CERTIFICATE-----\n" ;
 
+#if defined(ESP8266)
+  #include <ESP8266WiFi.h>
+  #ifdef SECURE_CONNECTION
+    // All BearSSL:: calls should be outside curly brackets, if it's possible.
+    // There may be problems inside brackets, such as a random crash
+    BearSSL::WiFiClientSecure client;
+    BearSSL::X509List cert(ROOT_CA);
+    const int PORT = 443;
+  #else
+    WiFiClient client;
+    const int PORT = 80;
+  #endif
+#elif defined(ESP32)
+  #ifdef SECURE_CONNECTION
+    #include <WiFiClientSecure.h>
+    WiFiClientSecure client;
+    const int PORT = 443;
+  #else
+    #include <WiFi.h>
+    WiFiClient client;
+    const int PORT = 80;
+  #endif
+#endif
+
+OWM_Weather::OWM_Weather() { // class constructor
+  // We should install the certificate once, because otherwise ESP8266 can crash randomly
+#ifdef SECURE_CONNECTION
+ #ifdef ESP8266
+  client.setTrustAnchors(&cert);
+ #else // ESP32
+  client.setCACert(ROOT_CA);
+ #endif
+#endif
+}
 
 /***************************************************************************************
 ** Function name:           getWeather
@@ -147,119 +164,110 @@ bool OWM_Weather::getFullWeather(OWM_current *current, OWM_hourly *hourly, OWM_d
 ***************************************************************************************/
 bool OWM_Weather::parseRequest(String url) {
   uint32_t timer;
-  #ifdef LOG_TIME
-    uint32_t startTimer = millis();
-    timer = millis();
-  #endif
+ #ifdef LOG_TIME
+  uint32_t startTimer = millis();
+  timer = millis();
+ #endif
 
   JSON_Decoder parser;
   parser.setListener(this);
   _parseOk = false;
 
-  #ifdef LOG_UNNECESSARY_INFO
-    Serial.println("Connecting to " + url);
-  #endif
+ #ifdef LOG_UNNECESSARY_INFO
+  Serial.println("Connecting to " + url);
+ #endif
 
-  #ifdef SECURE_CONNECTION
-    #ifdef ESP8266
-      if (time(nullptr) < 250000) { // Set current time for HTTPS connection
-        #ifdef LOG_UNNECESSARY_INFO
-          Serial.print("Setting time using SNTP... ");
-        #endif
+ #if (defined SECURE_CONNECTION) && (defined ESP8266)
+  if (time(nullptr) < 1000000) { // Set current time for HTTPS connection
+   #ifdef LOG_UNNECESSARY_INFO
+    Serial.print("Setting time using SNTP... ");
+   #endif
 
-        sntp_stop();
-        sntp_setservername(0, "time.nist.gov");
-        sntp_init();
+    sntp_stop();
+    sntp_setservername(0, "time.nist.gov");
+    sntp_init();
 
-        uint8_t tickCounter = 0;
-        while (time(nullptr) < 250000) {
-          if (tickCounter > 49) {
-            #ifdef LOG_UNNECESSARY_INFO
-              if (tickCounter == 50) Serial.print("Please wait... ");
-              else if (tickCounter == 60) Serial.print("Oh, so long... ");
-              else if (tickCounter == 70) Serial.print("Once the time will load... ");
-            #endif
-            if (tickCounter == 140) { // ~100 seconds
-              #ifdef LOG_ERRORS
-                Serial.println("Error: getting time failed.");
-              #endif
-              return false;
-            }
-            delay(1000);
-          }
-          else delay(150);
-
-          tickCounter++;
+    uint8_t tickCounter = 0;
+    while (time(nullptr) < 1000000) {
+      if (tickCounter > 49) {
+       #ifdef LOG_UNNECESSARY_INFO
+        if (tickCounter == 50) Serial.print("Please wait... ");
+        else if (tickCounter == 60) Serial.print("Oh, so long... ");
+        else if (tickCounter == 70) Serial.print("Once the time will load... ");
+       #endif
+        if (tickCounter == 140) { // ~100 seconds
+         #ifdef LOG_ERRORS
+          Serial.println("Error: getting time failed.");
+         #endif
+          return false;
         }
-
-        #ifdef LOG_TIME
-          Serial.print("Time received in "); Serial.print(millis() - timer); Serial.print(" ms. ");
-          timer = millis();
-        #endif
+        delay(1000);
       }
-      
-      BearSSL::X509List cert(ROOT_CA);
-      client.setTrustAnchors(&cert);
-    #else // ESP32
-      client.setCACert(ROOT_CA);
-    #endif
-  if (!client.connect(host, 443)) {
-  #else
-  if (!client.connect(host, 80)) {
-  #endif
-  #ifdef LOG_ERRORS
+      else delay(150);
+
+      tickCounter++;
+    }
+
+   #ifdef LOG_TIME
+    Serial.print("Time received in "); Serial.print(millis() - timer); Serial.print(" ms. ");
+    timer = millis();
+   #endif
+  }
+ #endif
+  if (!client.connect(HOST, PORT)) {
+   #ifdef LOG_ERRORS
     Serial.println("Error: connection failed.");
-  #endif
+   #endif
     return false;
   }
-#ifdef LOG_TIME
+ #ifdef LOG_TIME
   Serial.print("Connected in "); Serial.print(millis() - timer); Serial.print(" ms. ");
-#endif
+ #endif
   timer = millis();
 
-#ifdef SHOW_JSON
+ #ifdef SHOW_JSON
   int ccount = 0;
-#endif
+ #endif
 
   // Send GET request
-#ifdef LOG_UNNECESSARY_INFO
+ #ifdef LOG_UNNECESSARY_INFO
   Serial.print("Sending GET request... ");
-#endif
-  client.print("GET " + url + " HTTP/1.1\r\n" + "Host: " + host + "\r\n" + "Connection: close\r\n\r\n");
+ #endif
+  client.print("GET " + url + " HTTP/1.1\r\n" + "Host: " + HOST + "\r\n" + "Connection: close\r\n\r\n");
 
-#ifdef ESP8266
+ #ifdef ESP8266
   while (client.connected() or client.available()) {
-#else
+ #else
   while (client.connected()) {
-#endif
+ #endif
     String line = client.readStringUntil('\n');
-#ifdef SHOW_HEADER
+   #ifdef SHOW_HEADER
     Serial.println(line);
-#endif
+   #endif
     if (line == "\r") {
-#ifdef LOG_UNNECESSARY_INFO
+     #ifdef LOG_UNNECESSARY_INFO
       Serial.print("Header end found. ");
-#endif
+     #endif
       break;
     }
 
     if ((millis() - timer) > 2500) {
-#ifdef LOG_ERRORS
+     #ifdef LOG_ERRORS
       Serial.println("Error: HTTP header timeout.");
-#endif
+     #endif
       client.stop();
       return false;
     }
   }
-#ifdef LOG_TIME
+ #ifdef LOG_TIME
   Serial.print("Got header in "); Serial.print((millis() - timer)); Serial.print(" ms. ");
-#endif
-#ifdef LOG_UNNECESSARY_INFO
+ #endif
+ #ifdef LOG_UNNECESSARY_INFO
   Serial.print("Parsing JSON. ");
-#endif
-#ifdef SHOW_JSON
-      Serial.println();
-#endif
+ #endif
+ #ifdef SHOW_JSON
+  Serial.println();
+ #endif
   timer = millis();
   char c = 0;
   // Parse the JSON data, available() includes yields
@@ -268,40 +276,40 @@ bool OWM_Weather::parseRequest(String url) {
       c = client.read();
       parser.parse(c);
 
-#ifdef SHOW_JSON
+     #ifdef SHOW_JSON
       Serial.print(c);
-#endif
+     #endif
 
       if ((millis() - timer) > 5000) {
-#ifdef LOG_ERRORS
+       #ifdef LOG_ERRORS
         Serial.println("Error: JSON parse client timeout.");
-#endif
+       #endif
         parser.reset();
         client.stop();
         return false;
       }
-#ifdef ESP32
+     #ifdef ESP32
       yield();
-#endif
+     #endif
     }
   }
-#ifdef SHOW_JSON
+ #ifdef SHOW_JSON
   Serial.println();
-#endif
+ #endif
 
   if (_objectLevel != 0) {
-    #ifdef LOG_ERRORS
-      Serial.println("Error: JSON end not received.");
-    #endif
+   #ifdef LOG_ERRORS
+    Serial.println("Error: JSON end not received.");
+   #endif
     parser.reset();
     client.stop();
     return false;
   }
 
-#ifdef LOG_TIME
+ #ifdef LOG_TIME
   Serial.print("JSON receieved and parsed in "); Serial.print((millis() - timer)); Serial.print(" ms. ");
   Serial.print("Success in "); Serial.print(millis()-startTimer); Serial.println(" ms.");
-#endif
+ #endif
 
   parser.reset();
   client.stop();
@@ -317,9 +325,9 @@ bool OWM_Weather::parseRequest(String url) {
 void OWM_Weather::key(const char *key) {
   _currentKey = key;
 
-#ifdef SHOW_CALLBACK
+ #ifdef SHOW_CALLBACK
   Serial.print("\n>>> Key >>>" + (String)key);
-#endif
+ #endif
 }
 
 void OWM_Weather::startDocument() {
@@ -330,9 +338,9 @@ void OWM_Weather::startDocument() {
   _arrayLevel = 0;
   _parseOk = true;
 
-#ifdef SHOW_CALLBACK
+ #ifdef SHOW_CALLBACK
   Serial.print("\n>>> Start document >>>");
-#endif
+ #endif
 }
 
 void OWM_Weather::endDocument() {
@@ -342,9 +350,9 @@ void OWM_Weather::endDocument() {
   _arrayIndex = 0;
   _arrayLevel = 0;
 
-#ifdef SHOW_CALLBACK
+ #ifdef SHOW_CALLBACK
   Serial.println("\n<<< End document <<<");
-#endif
+ #endif
 }
 
 void OWM_Weather::startObject() {
@@ -352,28 +360,28 @@ void OWM_Weather::startObject() {
   _currentSet = _currentKey;
   _objectLevel++;
 
-#ifdef SHOW_CALLBACK
+ #ifdef SHOW_CALLBACK
   Serial.print("\n>>> Start object level:" + (String) _objectLevel + " array level:" + (String) _arrayLevel + " array index:" + (String) _arrayIndex +" >>>");
-#endif
+ #endif
 }
 
 void OWM_Weather::endObject() {
   if (_arrayLevel == 0) _currentParent = "";
   if (_arrayLevel == 1  && _objectLevel == 2) _arrayIndex++;
   _objectLevel--;
-  
-#ifdef SHOW_CALLBACK
+
+ #ifdef SHOW_CALLBACK
   Serial.print("\n<<< End object <<<");
-#endif
+ #endif
 }
 
 void OWM_Weather::startArray() {
   _arrayLevel++;
   _valuePath = _currentParent + "/" + _currentKey; // aka = current Object, e.g. "daily:data"
 
-#ifdef SHOW_CALLBACK
+ #ifdef SHOW_CALLBACK
   Serial.print("\n>>> Start array " + _valuePath + "/" + (String) _arrayLevel + "/" + (String) _arrayIndex +" >>>");
-#endif
+ #endif
 }
 
 void OWM_Weather::endArray() {
@@ -381,9 +389,9 @@ void OWM_Weather::endArray() {
   if (_arrayLevel == 0) _arrayIndex = 0;
   _valuePath = "";
 
-#ifdef SHOW_CALLBACK
+ #ifdef SHOW_CALLBACK
   Serial.print("\n<<< End array <<<");
-#endif
+ #endif
 }
 
 void OWM_Weather::error(const char *message) {

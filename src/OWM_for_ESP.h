@@ -8,6 +8,7 @@
 ***************************************************************************************/
 class OWM_Weather: public JsonListener {
   public:
+    OWM_Weather();
     // Sketch should call this forecast requests, it returns true if no parse errors encountered
     bool getWeather(OWM_current *current, OWM_hourly *hourly, OWM_daily *daily,
                      String api_key, String latitude, String longitude,

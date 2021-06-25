@@ -46,7 +46,7 @@ void setup() {
 
   Serial.println("\nIf you see the value 255 - most likely OWM is not providing this data for your location.");
   Serial.println("You can verify this by requesting it on your browser and analyzing the data yourself.");
-  Serial.println("255 shows only in current, 0 hour in hourly and 0 day in daily.");
+  Serial.println("255 shows only in current, zero hour in hourly and zero day in daily.");
 }
 
 int type = 0; // You can set this value from 0 to 4 for convenience. If weather receieved, this variable changes.
