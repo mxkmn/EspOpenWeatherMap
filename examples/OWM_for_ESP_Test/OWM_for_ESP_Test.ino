@@ -19,13 +19,14 @@
 // =========  User configured stuff ends here  =========
 
 // Choose library to load
-#ifdef ESP8266
+#if defined ESP8266
   #include <ESP8266WiFi.h>
-#else // ESP32
+#elif defined ESP32
   #include <WiFi.h>
 #endif
 
-#include <JSON_Decoder.h>
+#include <JSON_Decoder.h> // https://github.com/Bodmer/JSON_Decoder
+
 #include <OWM_for_ESP.h>
 OWM_Weather owm; // Weather forecast library instance
 

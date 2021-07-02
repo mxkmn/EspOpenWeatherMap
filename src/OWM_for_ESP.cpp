@@ -92,18 +92,27 @@ bool OWM_Weather::getWeather(OWM_current *current, OWM_hourly *hourly, OWM_daily
                               String api_key, String latitude, String longitude,
                               String units, String language, String type) {
 
+  // It's not necessary, but it's more readable on logging
+ #ifdef SECURE_CONNECTION
+  String url = "https://";
+ #else
+  String url = "http://";
+ #endif
+
   if (type == "full") {
     _apiId = 1;
-    type = "onecall"; // Change type from human-understandable ("full") to OWT-understandable ("onecall")
+    url += "api.openweathermap.org/data/2.5/onecall"; // Change type from human-understandable ("full") to OWT-understandable ("onecall")
   }
   else if (type == "current") {
     _apiId = 2;
-    type = "weather"; // Change type from human-understandable ("current") to OWT-understandable ("weather")
+    url += "api.openweathermap.org/data/2.5/weather"; // Change type from human-understandable ("current") to OWT-understandable ("weather")
   }
   else {
     Serial.println("type (" + type + ") is incorrect. Set \"current\" or \"full\".");
     return false;
   }
+
+  url += "?lat=" + latitude + "&lon=" + longitude; // Adding our location
 
   // Local copies of structure pointers, the structures are filled during parsing
   this->current = current;
@@ -111,22 +120,17 @@ bool OWM_Weather::getWeather(OWM_current *current, OWM_hourly *hourly, OWM_daily
   this->daily   = daily;
 
   // Exclude some info by passing fn a NULL pointer to reduce memory needed
-  String exclude = "";
-  if (type == "onecall") {
-    exclude += "minutely,alerts";
-    if (!current) exclude += ",current";
-    if (!hourly)  exclude += ",hourly";
-    if (!daily)   exclude += ",daily";
+  if (type == "full") { // One Call API
+    url += "&exclude=minutely,alerts";
+    if (!current) url += ",current";
+    if (!hourly)  url += ",hourly";
+    if (!daily)   url += ",daily";
   }
-  /*~ Random string in exclude uses small bug in OWM, which makes it possible
-  //~ to get the weather at any time, not only once in 2-10 minutes.
-  //~ Unfortunately, the data doesn't change anyway and the update doesn't
-  //~ happen all the time, so I disabled this function
-  if (type == "onecall") exclude += ",";
-  exclude += String(ESP.random());
-  */
 
-  String url = "https://api.openweathermap.org/data/2.5/" + type + "?lat=" + latitude + "&lon=" + longitude + "&exclude=" +  exclude + "&units=" + units + "&lang=" + language + "&appid=" + api_key;
+  // Add the remaining data
+  if (units != "standard") url += "&units=" + units;
+  if (language != "en") url += "&lang=" + language;
+  url += "&appid=" + api_key; 
 
   // Send GET request and feed the parser
   bool result = parseRequest(url);
@@ -214,10 +218,12 @@ bool OWM_Weather::parseRequest(String url) {
    #endif
   }
  #endif
+
   if (!client.connect(HOST, PORT)) {
    #ifdef LOG_ERRORS
     Serial.println("Error: connection failed.");
    #endif
+    client.stop();
     return false;
   }
  #ifdef LOG_TIME
@@ -246,14 +252,14 @@ bool OWM_Weather::parseRequest(String url) {
    #endif
     if (line == "\r") {
      #ifdef LOG_UNNECESSARY_INFO
-      Serial.print("Header end found. ");
+      Serial.print("HTTP header end found. ");
      #endif
       break;
     }
 
     if ((millis() - timer) > 2500) {
      #ifdef LOG_ERRORS
-      Serial.println("Error: HTTP header timeout.");
+      Serial.println("Error: HTTP header retrieval time exceeded.");
      #endif
       client.stop();
       return false;
@@ -282,7 +288,7 @@ bool OWM_Weather::parseRequest(String url) {
 
       if ((millis() - timer) > 5000) {
        #ifdef LOG_ERRORS
-        Serial.println("Error: JSON parse client timeout.");
+        Serial.println("Error: JSON parsing time exceeded.");
        #endif
         parser.reset();
         client.stop();
@@ -299,7 +305,7 @@ bool OWM_Weather::parseRequest(String url) {
 
   if (_objectLevel != 0) {
    #ifdef LOG_ERRORS
-    Serial.println("Error: JSON end not received.");
+    Serial.println("Error: JSON end wasn't received.");
    #endif
     parser.reset();
     client.stop();
@@ -308,7 +314,9 @@ bool OWM_Weather::parseRequest(String url) {
 
  #ifdef LOG_TIME
   Serial.print("JSON receieved and parsed in "); Serial.print((millis() - timer)); Serial.print(" ms. ");
-  Serial.print("Success in "); Serial.print(millis()-startTimer); Serial.println(" ms.");
+  Serial.print("Weather receieved in "); Serial.print(millis()-startTimer); Serial.println(" ms.");
+ #elif defined(LOG_UNNECESSARY_INFO)
+  Serial.println("Weather receieved!");
  #endif
 
   parser.reset();
