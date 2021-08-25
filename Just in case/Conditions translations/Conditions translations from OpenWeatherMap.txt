@@ -1,0 +1,2737 @@
+These translations were provided by official OpenWeatherMap support via email.
+If you are using C++, check OWM_for_ESP.cpp in this repository. Or use simple parser from this folder to uppercase and connect it with your programming language.
+
+af:
+  name: Afrikaans
+  main: ""
+  description:
+    200: donderstorm met ligte reën
+    201: donderstorm met reën
+    202: donderstorm met swaar reën
+    210: ligte donderstorm
+    211: donderstorm
+    212: swaar donderstorm
+    221: donderstorms plek-plek
+    230: donderstorm met sagte motreën
+    231: donderstorm met motreën
+    232: donderstorm met digte motreën
+    300: sagte motreën
+    301: motreën
+    302: digte motreën
+    310: sagte motreën tot reën
+    311: motreën tot reën
+    312: digte motreën tot reën
+    313: reënbuie en motreën
+    314: swaar reënbuie en motreën
+    321: motreënbuie
+    500: ligte reën
+    501: matige reën
+    502: swaar reën
+    503: baie swaar reën
+    504: ekstreme swaar reën
+    511: vriesreën
+    520: ligte reënbuie
+    521: reënbuie
+    522: swaar reënbuie
+    531: reënbuie plek-plek
+    600: ligte sneeu
+    601: sneeu
+    602: swaar sneeu
+    611: sneeureën
+    612: sneeureënbui
+    615: ligte reën en sneeu
+    616: reën en sneeu
+    620: ligte sneeubui
+    621: sneeubui
+    622: swaar sneeubui
+    701: newel
+    711: rook
+    721: deinserigheid
+    731: sand, dwarrelwinde
+    741: mis
+    751: sand
+    761: stof
+    762: vulkaniese as
+    771: rukwinde
+    781: tornado
+    800: helder lug
+    801: enkele wolke
+    802: verstrooide wolke
+    803: los wolke
+    804: bewolk
+  ar:
+  name: Arabic
+  main: ""
+  description:
+    200: عاصفة رعدية مع أمطار خفيفة
+    201: عاصفة رعدية مع مطر
+    202: عاصفة رعدية مع أمطار غزيرة
+    210: عاصفة رعدية خفيفة
+    211: عاصفة رعدية
+    212: عاصفة رعدية قوية
+    221: عاصفة رعدية خشنة
+    230: عاصفة رعدية مع رذاذ خفيف
+    231: عاصفة رعدية مع رذاذ
+    232: عاصفة رعدية مع رذاذ قوي
+    300: رذاذ خفيف الكثافة
+    301: رذاذ
+    302: رذاذ شديد الكثافة
+    310: رذاذ مطر خفيف الكثافة
+    311: رذاذ مطر
+    312: رذاذ مطر شديد الكثافة
+    313: رذاذ المطر
+    314: رذاذ مطر قوي
+    321: وابل مطر
+    500: مطر خفيف
+    501: مطر متوسط الغزارة
+    502: مطر غزير
+    503: مطر شديد الغزارة
+    504: مطر غزير جدا
+    511: مطر بارد
+    520: وابل مطر خفيف
+    521: وابل مطر
+    522: وابل مطر شديد الكثافة
+    531: رذاذ مطر كثيف
+    600: ثلوج خفيفة
+    601: ثلوج
+    602: ثلوج قوية
+    611: صقيع
+    612: رذاذ من الصقيع
+    615: مطر خفيف مع ثلوج
+    616: مطر مع ثلوج
+    620: رذاذ ثلوج خفيف
+    621: وابل ثلوج
+    622: رذاذ ثلوج كثيف
+    701: ضباب
+    711: دخان
+    721: غبار
+    731: غبار
+    741: ضباب
+    751: رمال
+    761: غبار 
+    762: رماد بركاني
+    771: سكوالس
+    781: إعصار
+    800: سماء صافية
+    801: غائم جزئي
+    802: غيوم متفرقة
+    803: غيوم متناثرة
+    804: غيوم قاتمة
+  
+az:
+  name: Azerbaijani
+  main: ""
+  description:
+    200: şimşək, yağış
+    201: şimşək
+    202: şimşək, leysan
+    210: zəif şimşək
+    211: ildırım
+    212: güclü şimşək
+    221: dağınıq leysan
+    230: şimşək, çiskin
+    231: şimşək, çiskinli leysan
+    232: şimşək, güclü leysan
+    300: yüngül çovğun
+    301: çiskin
+    302: güclü intensiv çiskin
+    310: yüngül intensivli çiskinli yağış
+    311: çiskinli yağış
+    312: güclü intensivli çiskinli yağış
+    313: leysan yağışı və çiskin
+    314: güclü leysan yağışı və çiskin
+    321: leysan yağışı
+    500: yüngül yağış
+    501 : mülayim yağış
+    502: şiddətli yağış
+    503: çox şiddətli yağış
+    504: ekstremal yağış
+    511: dondurucu yağış
+    520: yüngül intensivli leysan yağışı
+    521: leysan yağışı
+    522: şiddətli intensiv leysan yağışı
+    531: sıx leysan yağışı
+    600: yüngül qar
+    601: qar
+    602: güclü qar
+    611: sulu qar
+    612: leysan sulu qar
+    615: yüngül yağış və qar
+    616: yağış və qar
+    620: yüngül sulu qar
+    621: sulu qar
+    622: güclü sulu qar
+    701: duman
+    711: Çisgin
+    721: Çən
+    731: qum, toz fırtınaları 
+    741: duman
+    751: qum
+    761: toz
+    762: vulkanik kül
+    771: səslər
+    781: tornado
+    800: aydın səma
+    801: az buludlu
+    802: dağınıq buludlu
+    803: az buludlu
+    804: qapalı buludlu
+bg:
+  name: Bulgarian
+  main: ""
+  description:
+    200: гръмотевична буря със слаб дъжд
+    201: гръмотевична буря с валеж
+    202: гръмотевична буря с порой
+    210: слаба гръмотевична буря
+    211: гръмотевична буря
+    212: силна гръмотевична буря
+    221: гръмотевична буря с прекъсвания
+    230: гръмотевична буря със слаб ръмеж
+    231: гръмотевична буря с ръмеж
+    232: гръмотевична буря със силен ръмеж
+    300: слаб ръмеж
+    301: ръмеж
+    302: силен ръмеж
+    310: слаб ръмеж и дъжд
+    311: ръмеж и дъжд
+    312: силен ръмеж и дъжд
+    313: проливен ръмеж и дъжд
+    314: пороен ръмеж и дъжд
+    321: силен ръмеж
+    500: слаб дъжд
+    501: умерен дъжд
+    502: интензивен дъжд
+    503: много силен дъжд
+    504: пороен дъжд
+    511: леден дъжд
+    520: кратковременен пороен дъжд
+    521: проливен дъжд
+    522: пороен дъжд
+    531: пороен дъжд с прекъсвания
+    600: слаб снеговалеж
+    601: снеговалеж
+    602: силен снеговалеж
+    611: суграшица
+    612: силна суграшица
+    615: слаб валеж от дъжд и сняг
+    616: дъжд и сняг
+    620: краткотраен слаб снеговалеж
+    621: краткотраен интензивен снеговалеж
+    622: краткотраен обилен снеговалеж
+    701: лека мъгла
+    711: димка
+    721: мараня
+    731: пясъчна или прашна буря
+    741: мъгла
+    751: пясък
+    761: прах
+    762: вулканична пепел
+    771: шквал
+    781: торнадо
+    800: ясно небе
+    801: предимно ясно
+    802: разкъсана облачност
+    803: предимно облачно
+    804: облачно
+  ca:
+  name: Catalan
+  main: ""
+  description:
+    200: tempesta amb pluja suau
+    201: tempesta amb pluja
+    202: tempesta amb pluja intensa
+    210: tempesta suau
+    211: tempesta
+    212: tempesta forta
+    221: tempesta irregular
+    230: tempesta amb plugim suau
+    231: tempesta amb plugin
+    232: tempesta amb molt plugim
+    300: plugim suau
+    301: plugim
+    302: plugim intens
+    310: plugim suau
+    311: plugim
+    312: plugim intens
+    313: pluja
+    314: pluja intensa
+    321: plugim
+    500: pluja suau
+    501: pluja
+    502: pluja intensa
+    503: pluja molt intensa
+    504: pluja extrema
+    511: pluja glaçada
+    520: pluja suau
+    521: pluja suau
+    522: pluja intensa
+    531: pluja irregular
+    600: nevada suau
+    601: nevada
+    602: nevada intensa
+    611: aiguaneu
+    612: pluja d'aiguaneu
+    615: plugim i neu
+    616: pluja i neu
+    620: nevada suau
+    621: nevada
+    622: nevada intensa
+    701: boira
+    711: fum
+    721: boirina
+    731: sorra
+    741: boira
+    751: sorra
+    761: pols
+    762: cendra volcànica
+    771: xàfec
+    781: tornado
+    800: cel net
+    801: lleugerament ennuvolat
+    802: núvols dispersos
+    803: nuvolositat variable
+    804: ennuvolat
+    
+cz:
+  name: Czech
+  main: ""
+  description:
+    200: bouřka se slabým deštěm
+    201: bouřka a déšť
+    202: bouřka se silným deštěm
+    210: slabší bouřka
+    211: bouřka
+    212: silná bouřka
+    221: bouřková přeháňka
+    230: bouřka se slabým mrholením
+    231: bouřka s mrholením
+    232: bouřka se silným mrholením
+    300: slabé mrholení
+    301: mrholení
+    302: silné mrholení
+    310: slabé mrholení a déšť
+    311: mrholení s deštěm
+    312: silné mrholení a déšť
+    313: mrholení a přeháňky
+    314: mrholení a silné přeháňky
+    321: občasné mrholení
+    500: slabý déšť
+    501: déšť
+    502: prudký déšť
+    503: přívalový déšť
+    504: průtrž mračen
+    511: mrznoucí déšť
+    520: slabé přeháňky
+    521: přeháňky
+    522: silné přeháňky
+    531: občasné přeháňky
+    600: mírné sněžení
+    601: sněžení
+    602: husté sněžení
+    611: zmrzlý déšť
+    612: smíšené přeháňky
+    615: slabý déšť se sněhem
+    616: déšť se sněhem
+    620: slabé sněhové přeháňky
+    621: sněhové přeháňky
+    622: silné sněhové přeháňky
+    701: mlha
+    711: kouř
+    721: opar
+    731: písečné či prachové víry
+    741: hustá mlha
+    751: písek
+    761: prašno
+    762: sopečný popel
+    771: prudké bouře
+    781: tornádo
+    800: jasno
+    801: skoro jasno
+    802: polojasno
+    803: oblačno
+    804: zataženo
+   
+da:
+  name: Danish
+  main: ""
+  description:
+    200: torden med let regn
+    201: torden med regn
+    202: torden med kraftig regn
+    210: svag torden
+    211: torden
+    212: kraftig torden
+    221: uregelmæssig torden
+    230: torden med let støvregn
+    231: torden med støvregn
+    232: torden med kraftig støvregn
+    300: let støvregn
+    301: støvregn
+    302: kraftig støvregn
+    310: let finregn
+    311: finregn
+    312: kraftig finregn
+    313: regnbyger og støvregn
+    314: kraftige regnbyger og støvregn
+    321: byger med støvregn
+    500: let regn
+    501: regn
+    502: kraftig regn
+    503: meget kraftig regn
+    504: skybrud
+    511: risiko for islag
+    520: lette regnbyger
+    521: regnbyger
+    522: kraftige regnbyger
+    531: uregelmæssige regnbyger
+    600: let snevejr
+    601: snevejr
+    602: kraftigt snevejr
+    611: slud
+    612: sludbyger
+    615: let regn og snevejr
+    616: regn og snevejr
+    620: lette snebyger
+    621: snebyger
+    622: kraftige snebyger
+    701: dis
+    711: Røg
+    721: dårlig sigtbarhed
+    731: sand- og støvskyer
+    741: tåge
+    751: sand
+    761: støv
+    762: vulkansk aske
+    771: rulleskyer
+    781: tornado
+    800: klar himmel
+    801: få skyer
+    802: spredte skyer
+    803: spredt skydække
+    804: skydække
+  
+de:
+  name: German
+  main: ""
+  description:
+    200: Gewitter mit leichtem Regen
+    201: Gewitter mit Regen
+    202: Gewitter mit starkem Regen
+    210: Leichte Gewitter
+    211: Gewitter
+    212: Schwere Gewitter
+    221: Vereinzelte Gewitter
+    230: Gewitter mit leichtem Nieselregen
+    231: Gewitter mit Nieselregen
+    232: Gewitter mit starkem Nieselregen
+    300: Leichtes Nieseln
+    301: Nieseln
+    302: Starkes Nieseln
+    310: Leichter Nieselregen
+    311: Nieselregen
+    312: Starker Nieselregen
+    313: Schauerregen und Nieselregen
+    314: Schwerer Schauerregen und Nieselregen
+    321: Nieselschauer
+    500: Leichter Regen
+    501: Mäßiger Regen
+    502: Starker Regen
+    503: Sehr starker Regen
+    504: Extremer Regen
+    511: Eisregen
+    520: Leichter Regenschauer
+    521: Regenschauer
+    531: Gelegentliche Schauer
+    522: Heftige Regenschauer
+    600: Mäßiger Schnee
+    601: Schnee
+    602: Heftiger Schneefall
+    611: Graupel
+    612: Graupelschauer
+    615: Leichter Schneeregen
+    620: Leichter Schneeschauer
+    621: Schneeschauer
+    622: Schwerer Schneeschauer
+    701: Trüb
+    711: Rauch
+    721: Dunst
+    731: Sand / Staubsturm
+    741: Nebel
+    751: Sand
+    761: Staub
+    762: Vulkanische Asche
+    771: Sturmböen
+    781: Tornado
+    800: Klarer Himmel
+    801: Ein paar Wolken
+    802: Mäßig bewölkt
+    803: Überwiegend bewölkt
+    804: Bedeckt
+
+el:
+  name: Greek
+  main: ""
+  description:
+    200: θύελλα με ασθενείς βροχοπτώσεις
+    201: θύελλα με βροχοπτώσεις
+    202: θύελλα με έντονες βροχοπτώσεις
+    210: ήπια θύελλα
+    211: θύελλα
+    212: έντονη θύελλα
+    221: ισχυρή θύελλα
+    230: θύελλα με ασθενείς ψιχάλες
+    231: θύελλα με ψιχάλες
+    232: θύελλα με έντονες ψιχάλες
+    300: ψιχάλες μικρής έντασης
+    301: ψιχάλες
+    302: ψιχάλες μεγάλης έντασης
+    310: ψιλόβροχο μικρής έντασης
+    311: ψιλόβροχο
+    312: ψιλόβροχο μεγάλης έντασης
+    313: μπόρα και ψιχάλες
+    314: έντονη μπόρα και ψιχάλες
+    321: έντονες ψιχάλες
+    500: ασθενείς βροχοπτώσεις
+    501: βροχοπτώσεις μέτριας έντασης
+    502: βροχοπτώσεις μεγάλης έντασης
+    503: πολύ έντονες βροχοπτώσεις
+    504: ακραίες βροχοπτώσεις
+    511: παγωμένη βροχή
+    520: μπόρα μικρής έντασης
+    521: μπόρα
+    522: μπόρα μεγάλης έντασης
+    531: ισχυρή μπόρα
+    600: ήπιες χιονοπτώσεις
+    601: χιονοπτώσεις
+    602: έντονες χιονοπτώσεις
+    611: χιονόνερο
+    612: χιονόνερο μεγάλης έντασης
+    615: ασθενείς βροχοπτώσεις και χιονοπτώσεις
+    616: βροχοπτώσεις και χιονοπτώσεις
+    620: ήπια χιονοθύελλα
+    621: χιονοθύελλα
+    622: έντονη χιονοθύελλα
+    701: ασθενής ομίχλη
+    711: υδρατμοί
+    721: καταχνιά
+    731: αμμοστρόβιλος, κονιορτοστρόβιλος
+    741: ομίχλη
+    751: άμμος
+    761: σκόνη
+    762: ηφαιστειακή τέφρα
+    771: μπουρίνι
+    781: ανεμοστρόβιλος
+    800: αίθριος καιρός
+    801: ελαφρές νεφώσεις
+    802: σποραδικές νεφώσεις
+    803: αραιές νεφώσεις
+    804: αυξημένες νεφώσεις
+   
+en:
+  name: English
+  main: ""
+  description:
+    200: thunderstorm with light rain
+    201: thunderstorm with rain
+    202: thunderstorm with heavy rain
+    210: light thunderstorm
+    211: thunderstorm
+    212: heavy thunderstorm
+    221: ragged thunderstorm
+    230: thunderstorm with light drizzle
+    231: thunderstorm with drizzle
+    232: thunderstorm with heavy drizzle
+    300: light intensity drizzle
+    301: drizzle
+    302: heavy intensity drizzle
+    310: light intensity drizzle rain
+    311: drizzle rain
+    312: heavy intensity drizzle rain
+    313: shower rain and drizzle
+    314: heavy shower rain and drizzle
+    321: shower drizzle
+    500: light rain
+    501: moderate rain
+    502: heavy intensity rain
+    503: very heavy rain
+    504: extreme rain
+    511: freezing rain
+    520: light intensity shower rain
+    521: shower rain
+    522: heavy intensity shower rain
+    531: ragged shower rain
+    600: light snow
+    601: snow
+    602: heavy snow
+    611: sleet
+    612: shower sleet
+    615: light rain and snow
+    616: rain and snow
+    620: light shower snow
+    621: shower snow
+    622: heavy shower snow
+    701: mist
+    711: smoke
+    721: haze
+    731: sand,dust whirls
+    741: fog
+    751: sand
+    761: dust
+    762: volcanic ash
+    771: squalls
+    781: tornado
+    800: clear sky
+    801: few clouds
+    802: scattered clouds
+    803: broken clouds
+    804: overcast clouds
+   
+eu:
+  name: Basque
+  main: ""
+  description:
+    200: trumoi-ekaitza euri arinarekin
+    201: trumoi-ekaitza euriarekin
+    202: trumoi-ekaitza euri ugariarekin
+    210: trumoi-ekaitz arina
+    211: trumoi-ekaitza
+    212: trumoi-ekaitz gogorra
+    221: trumoi-ekaitz oso gogorra
+    230: trumoi-ekaitza langar arinarekin
+    231: trumoi-ekaitza langarrarekin
+    232: trumoi-ekaitza langar ugariarekin
+    300: langar arina
+    301: langarra
+    302: langar ugaria
+    310: zirimiri arina
+    311: zirimiria
+    312: zirimiri ugaria
+    313: euri-zaparrada eta langarra
+    314: euri-zaparrada ugaria eta langarra
+    321: langar-zaparrada
+    500: euri arina
+    501: euria
+    502: euri ugaria
+    503: euri oso ugaria
+    504: euri bortitza
+    511: euri izozkorra
+    520: euri-zaparrada arina
+    521: euri-zaparrada
+    522: euri-zaparrada bizia
+    531: euri-zaparrada bortitza
+    600: elur arina
+    601: elurra
+    602: elur ugaria
+    611: elurbustia
+    612: elurbusti-zaparrada
+    615: euri arina eta elurra
+    616: euria eta elurra
+    620: elur-zaparrada arina
+    621: elur-zaparrada
+    622: elur-zaparrada ugaria
+    701: lainobera
+    711: kea
+    721: gandua
+    731: hare/hauts-zurrunbiloak
+    741: lainoa
+    751: harea
+    761: hautsa
+    762: errrauts bolkanikoa
+    771: zurrunbiloak
+    781: tornadoa
+    800: oskarbi
+    801: hodei gutxi
+    802: hodei sakabanatuak
+    803: hodeiak eta ostarteak
+    804: zeru estalia
+ 
+fa:
+  name: Persian(Farsi)
+  main: ""
+  description:
+    200: بارش خفیف باران همراه با رعد و برق
+    201: بارش باران همراه با رعد و برق
+    202: بارش سنگین باران همراه با رعد و برق
+    210: رعد و برق خفیف
+    211: رعد و برق
+    212: رعد و برق سنگین
+    221: رعد و برق پراکنده
+    230: نم نم خفیف باران همراه با رعد و برق
+    231: نم نم باران همراه با رعد و برق
+    232: نم نم سنگین باران همراه با رعد و برق
+    300: نم نم خفیف باران
+    301: نم نم باران
+    302: نم نم سنگین باران
+    310: نم نم باران با شدت کم
+    311: نم نم باران
+    312: نم نم باران با شدت زیاد
+    313: نم نم باران و باران شدید
+    314: نم نم باران و باران بسیار سنگین
+    321: نم نم باران
+    500: بارش خفیف باران
+    501: بارش باران
+    502: بارش خیلی شدید باران
+    503: بارش بسیار سنگین باران
+    504: بارش باران شدید
+    511: بارش تگرگ
+    520: بارش شدید باران
+    521: بارش باران
+    522: رگبار شدید باران
+    531: رگبار پراکنده باران
+    600: بارش خفیف برف
+    601: برف
+    602: بارش سنگین برف
+    611: بوران
+    612: بارش برف و باران
+    615: بارش خفیف باران و برف
+    616: بارش باران و برف
+    620: بارش خفیف برف
+    621: بارش برف
+    622: بارش سنگین برف
+    701: مه و غبار
+    711: دودی
+    721: ریز گرد
+    731: غبار آلود
+    741: مه آلود
+    751: شن
+    761: گرد و غبار
+    762: خاکستر آتشفشانی
+    771: بوران
+    781: گرد باد
+    800: آسمان صاف
+    801: کمی ابری
+    802: ابرهای پراکنده
+    803: ابرهای پارچه پارچه شده
+    804: پوشیده از ابر
+    
+fi:
+  name: Finnish
+  main: ""
+  description:
+    200: ukkosmyrsky ja kevyt sade
+    201: ukkosmyrsky ja sade
+    202: ukkosmyrsky ja kova sade
+    210: pieni ukkosmyrsky
+    211: ukkosmyrsky
+    212: kova ukkosmyrsky
+    221: lievä ukkosmyrsky
+    230: ukkosmyrsky ja kevyt tihkusade
+    231: ukkosmyrsky ja tihkusade
+    232: ukkosmyrsky ja kova tihkusade
+    300: lievä tihuttainen
+    301: tihuttaa
+    302: kova tihuttainen
+    310: lievä tihkusade
+    311: tihkusade
+    312: kova tihkusade
+    313: sadesuihkun ja tihkusadetta
+    314: raskas sadesuihkun ja tihkusadetta
+    321: tihkusade
+    500: pieni sade
+    501: kohtalainen sade
+    502: kova sade
+    503: erittäin runsasta sadetta
+    504: kova sade
+    511: jäätävä sade
+    520: lievä tihkusade
+    521: tihkusade
+    522: kova sade
+    531: satunnaiset suihkut
+    600: pieni lumisade
+    601: lumi
+    602: paljon lunta
+    611: räntä
+    612: räntä suhku
+    620: kevyt lumi suihku
+    621: lumikuuro
+    622: raskas lumi suihku
+    701: sumu
+    711: savu
+    721: sumu
+    731: hiekka/pöly pyörre
+    741: sumu
+    751: hiekka
+    761: pöly
+    762: vulkaanista tuhkaa
+    771: puuskaista tuulta
+    781: tornado
+    800: taivas on selkeä
+    801: vähän pilviä
+    802: ajoittaisia pilviä
+    803: hajanaisia pilviä
+    804: pilvinen
+  
+fr:
+  name: French
+  main: ""
+  description:
+    200: orage et pluie fine 
+    201: orage et pluie
+    202: orage et forte pluie
+    210: orage léger
+    211: orage
+    212: gros orage
+    221: orages localisés
+    230: orage et légère bruine
+    231: orage et bruine
+    232: orage et forte bruine
+    300: bruine légère
+    301: bruine
+    302: forte bruine
+    310: pluie très fine
+    311: pluie fine
+    312: grosse pluie fine
+    313: averses de pluie et de bruine
+    314: grosses averses de pluie et de bruine
+    321: averses de bruine
+    500: légère pluie
+    501: pluie modérée
+    502: forte pluie
+    503: très forte pluie
+    504: pluie extrême
+    511: pluie verglaçante
+    520: petites averses
+    521: averses de pluie
+    522: grosses averses
+    531: averses localisées
+    600: légères chutes de neige
+    601: chutes de neige
+    602: fortes chutes de neige
+    611: neige fondue
+    612: averses de neige fondue
+    615: pluie légère et neige
+    616: pluie et neige
+    620: petites averses de neige
+    621: averses de neige
+    622: grosses averses de neige
+    701: brume
+    711: fumée
+    721: brume sèche
+    731: tempête de sable
+    741: brouillard
+    751: sable
+    761: poussière
+    762: cendres volcaniques
+    771: bourrasques
+    781: tornade
+    800: ciel dégagé
+    801: peu nuageux
+    802: partiellement nuageux
+    803: nuageux
+    804: couvert
+   
+gl:
+  name: Galician
+  main: ""
+  description:
+    200: tormenta eléctrica con choiva lixeira
+    201: tormenta eléctrica con choiva
+    202: tormenta eléctrica con choiva intensa
+    210: tormenta eléctrica lixeira
+    211: tormenta eléctrica
+    212: tormenta eléctrica forte
+    221: tormenta eléctrica irregular
+    230: tormenta eléctrica con orballo lixeiro
+    231: tormenta eléctrica con orballo
+    232: tormenta eléctrica con orballo intenso
+    300: orballo lixeiro
+    301: orballo
+    302: orballo de gran intensidade
+    310: choiva e orballo lixeiro
+    311: choiva e orballo
+    312: choiva e orballo de gran intensidade
+    313: choiva e regue
+    314: choiva aguaceiro e regue
+    321: orballo de ducha
+    500: choiva lixeira
+    501: choiva moderada
+    502: choiva de gran intensidade
+    503: choiva moi forte
+    504: choiva extrema
+    511: choiva xeada
+    520: choiva de ducha de baixa intensidade
+    521: choiva de ducha
+    522: choiva de ducha de gran intensidade
+    531: choivas ocasionais
+    600: nevada lixeira
+    601: neve
+    602: nevada intensa
+    611: auganeve
+    612: ducha saraiba
+    620: ducha de neve Luz
+    621: neve de ducha
+    622: ducha de neve pesada
+    701: néboa
+    711: fume
+    721: néboa lixeira
+    731: remuiños de area e polvo
+    741: bruma
+    751: area
+    761: po 
+    762: cinzas volcánicas
+    771: squalls
+    781: furacán
+    800: ceo claro
+    801: algo de nubes
+    802: nubes dispersas
+    803: nubes rotas
+    804: nubes
+    
+he:
+  name: Hebrew
+  main: ""
+  description:
+    200: סופת רעמים עם גשם קל
+    201: סופת רעמים עם גשם
+    202: סופת רעמים עם גשם כבד
+    210: סופת רעמים קלה
+    211: סופת רעמים
+    212: סופת רעמים כבדה
+    221: סופות רעמים לסירוגין
+    230: סופת רעמים עם טפטוף קל
+    231: סופת רעמים עם טפטוף
+    232: סופת רעמים עם טפטוף כבד
+    300: טפטוף קל
+    301: טפטוף
+    302: טפטוף כבד
+    310: גשם מטפטף קל
+    311: גשם מטפטף
+    312: גשם מטפטף כבד
+    313: ממטרים וטפטוף
+    314: ממטרים כבדים וטפטוף
+    321: ממטר מטפטף
+    500: גשם קל
+    501: גשם בינוני
+    502: גשם כבד
+    503: גשם כבד מאוד
+    504: גשם קיצוני
+    511: גשם מקפיא
+    520: ממטרים קלים
+    521: ממטרים
+    522: ממטרים כבדים
+    531: ממטרים לסירוגין
+    600: שלג קל
+    601: שלג
+    602: שלג כבד
+    611: גשם עם שלג
+    612: ממטרים עם שלג
+    615: גשם קל ושלג
+    616: גשם ושלג
+    620: ממטרי שלג קלים
+    621: ממטרי שלג
+    622: ממטרי שלג כבדים
+    701: ערפל דק
+    711: עשן
+    721: אובך
+    731: חול, סופות אבק
+    741: ערפל
+    751: חול
+    761: אבק
+    762: אפר געשי
+    771: סערות
+    781: טורנדו
+    800: שמיים בהירים
+    801: מעונן חלקית
+    802: עננים בודדים
+    803: שברי ענן
+    804: מעונן
+hi:
+  name: Hindi
+  main: ""
+  description:
+    200: हल्की वर्षा के साथ तूफान
+    201: वर्षा के साथ तूफान
+    202: भारी वर्षा के साथ तूफान
+    210: कम तीव्रता वाला तूफान
+    211: तूफान
+    212: अधिक तीव्रता वाला तूफान
+    221: अत्यधिक कमज़ोर तूफान
+    230: हल्की बूंदाबांदी के साथ तूफान
+    231: बूंदाबांदी के साथ तूफान
+    232: भारी बूंदाबांदी के साथ तूफान
+    300: कम तीव्रता वाली बूंदाबांदी
+    301: बूंदाबांदी
+    302: अधिक तीव्रता वाली बूंदाबांदी
+    310: कम तीव्र बूंदाबांदी
+    311: बूंदाबांदी 
+    312: अधिक तीव्र बूंदाबांदी
+    313: बौछार और बूंदाबांदी
+    314: भारी बौछार और बूंदाबांदी
+    321: बौछार वाली बूंदाबांदी
+    500: हल्की वर्षा
+    501: मध्यम वर्षा
+    502: अधिक तीव्र वर्षा
+    503: अत्यधिक भारी वर्षा
+    504: अत्यधिक वर्षा
+    511: बर्फ के रूप में जमने वाली वर्षा
+    520: कम तीव्र बौछार
+    521: बौछार
+    522: अधिक तीव्र बौछार
+    531: अत्यधिक कमज़ोर बौछार
+    600: हल्का हिमपात
+    601: हिमपात
+    602: भारी हिमपात
+    611: ओलों के साथ वर्षा
+    612: ओलों के साथ बौछार
+    615: हल्की वर्षा और हिमपात
+    616: वर्षा और हिमपात
+    620: हल्की बौछार वाला हिमपात
+    621: बौछार वाला हिमपात
+    622: अधिक बौछार वाला हिमपात
+    701: धुंध
+    711: धुआं
+    721: कुहरा
+    731: रेत, धूल के भँवर
+    741: कोहरा
+    751: रेत
+    761: धूल
+    762: ज्वालामुखी की राख
+    771: आँधी
+    781: बवंडर
+    800: साफ आकाश
+    801: कुछ बादल
+    802: छितरे हुए बादल
+    803: टूटे हुए बादल
+    804: घनघोर बादल
+hr:
+  name: Croatian
+  main: ""
+  description:
+    200: grmljavinska oluja s slabom kišom
+    201: grmljavinska oluja s kišom
+    202: grmljavinska oluja s jakom kišom
+    210: slaba grmljavinska oluja
+    211: grmljavinska oluja
+    212: jaka grmljavinska oluja
+    221: orkanska grmljavinska oluja
+    230: grmljavinska oluja sa slabom rosuljom
+    231: grmljavinska oluja s rosuljom
+    232: grmljavinska oluja sa jakom rosuljom
+    300: rosulja slabog intenziteta
+    301: rosulja
+    302: rosulja jakog intenziteta
+    310: rosulja s kišom slabog intenziteta
+    311: rosulja s kišom
+    312: rosulja s kišom jakog intenziteta
+    313: pljuskovi i rosulja
+    314: rosulja s jakim pljuskovima
+    321: rosulja s pljuskovima
+    500: slaba kiša
+    501: umjerena kiša
+    502: kiša jakog intenziteta
+    503: vrlo jaka kiša
+    504: ekstremna kiša
+    511: ledena kiša
+    520: pljusak slabog intenziteta
+    521: pljusak
+    522: pljusak jakog intenziteta
+    531: olujna kiša s pljuskovima
+    600: slabi snijeg
+    601: snijeg
+    602: gusti snijeg
+    611: susnježica
+    612: susnježica s pljuskovima
+    615: slaba kiša i snijeg
+    616: kiša i snijeg
+    620: snijeg s povremenim pljuskovima
+    621: snijeg s pljuskovima
+    622: snijeg s jakim pljuskovima
+    701: sumaglica
+    711: dim
+    721: izmaglica
+    731: kovitlaci pijeska ili prašine
+    741: magla
+    751: pijesak
+    761: prašina
+    762: vulkanski pepeo
+    771: zapusi vjetra s kišom
+    781: tornado
+    800: vedro
+    801: blaga naoblaka
+    802: raštrkani oblaci
+    803: isprekidani oblaci
+    804: oblačno
+   
+hu:
+  name: Hungarian
+  main: ""
+  description:
+    200: vihar enyhe esővel
+    201: vihar esővel
+    202: vihar heves esővel
+    210: enyhe zivatar
+    211: vihar
+    212: heves vihar
+    221: durva vihar
+    230: vihar enyhe szitálással
+    231: vihar szitálással
+    232: vihar erős szitálással
+    300: enyhe intenzitású szitálás
+    301: szitálás
+    302: erős intenzitású szitálás
+    310: enyhe intenzitású szitáló eső
+    311: szitáló eső
+    312: erős intenzitású szitáló eső
+    313: zuhanyeső szitálás
+    314: nehéz zuhanyeső szitálás
+    321: zápor
+    500: enyhe eső
+    501: közepes eső
+    502: heves intenzitású eső
+    503: nagyon heves eső
+    504: extrém eső
+    511: ónos eső
+    520: enyhe intenzitású zápor
+    521: zápor
+    522: erős intenzitású zápor
+    531: alkalmi zuhanyok
+    600: enyhe havazás
+    601: havazás
+    602: erős havazás
+    611: havas eső
+    612: ónos eső zuhany
+    615: enyhe esőzés és havazás
+    616: hó és eső
+    620: enyhe hózápor
+    621: hózápor
+    622: intenzív hózápor
+    701: gyenge köd
+    711: köd
+    721: köd
+    731: homokvihar
+    741: köd
+    751: homok
+    761: por
+    762: vulkáni hamu
+    771: vihar
+    781: tornádó
+    800: tiszta égbolt
+    801: kevés felhő
+    802: szórványos felhőzet
+    803: erős felhőzet
+    804: borús égbolt
+   
+id:
+  name: Indonesian
+  main: ""
+  description:
+    200: badai dengan hujan rintik-rintik
+    201: badai dengan hujan
+    202: badai dengan hujan lebat
+    210: badai ringan
+    211: badai
+    212: badai yang berat
+    221: badai yang buruk
+    230: badai dengan gerimis kecil
+    231: badai dengan gerimis
+    232: badai dengan gerimis lebat
+    300: gerimis berintensitas rendah
+    301: gerimis
+    302: gerimis berintensitas tinggi
+    310: hujan gerimis berintensitas rendah
+    311: hujan gerimis
+    312: hujan gerimis berintensitas tinggi
+    313: hujan sesaat dan gerimis
+    314: hujan deras sesaat dan gerimis
+    321: gerimis sesaat
+    500: hujan rintik-rintik
+    501: hujan sedang
+    502: hujan berintensitas tinggi
+    503: hujan yang sangat lebat
+    504: hujan ekstrem
+    511: hujan yang sangat dingin
+    520: hujan sesaat berintensitas rendah
+    521: hujan sesaat
+    522: hujan sesaat berintensitas tinggi
+    531: hujan deras sesaat
+    600: salju ringan
+    601: salju
+    602: salju lebat
+    611: hujan bercampur salju
+    612: hujan es
+    615: hujan rintik-rintik dan salju
+    616: hujan dan salju
+    620: hujan salju ringan
+    621: hujan salju
+    622: hujan salju lebat
+    701: halimun
+    711: berasap
+    721: kabut asap
+    731: pusaran debu, pasir
+    741: kabut
+    751: pasir
+    761: debu
+    762: abu vulkanik
+    771: angin kencang
+    781: angin topan
+    800: langit cerah
+    801: sedikit berawan
+    802: awan tersebar
+    803: awan pecah
+    804: awan mendung
+it:
+  name: Italian
+  main: ""
+  description:
+    200: temporale con pioggerella
+    201: temporale con pioggia
+    202: temporale con pioggia forte
+    210: temporale
+    211: temporale
+    212: temporale forte
+    221: temporale
+    230: temporale con pioggerella
+    231: temporale con pioggerella
+    232: temporale con pioggerella
+    300: pioggerella
+    301: pioggerella
+    302: pioggerella
+    310: pioggerella
+    311: pioggerella
+    312: forte pioggerella
+    313: doccia a pioggia e pioggia
+    314: doccia a pioggia pesante e pioggerellina
+    321: acquazzone
+    500: pioggia leggera
+    501: pioggia moderata
+    502: forte pioggia
+    503: pioggia fortissima
+    504: pioggia estrema
+    511: pioggia gelata
+    520: pioggerella
+    521: acquazzone
+    522: acquazzone
+    531: occasionali rovesci
+    600: neve
+    601: neve
+    602: forte nevicata
+    611: nevischio
+    612: doccia nevischio
+    620: doccia di neve leggera
+    621: forte nevicata
+    622: doccia di neve pesante
+    701: foschia
+    711: fumo
+    721: foschia
+    731: mulinelli di sabbia/polvere
+    741: nebbia
+    751: sabbia
+    761: la polvere
+    762: cenere vulcanica
+    771: bufere
+    781: tornado
+    800: cielo sereno
+    801: poche nuvole
+    802: nubi sparse
+    803: nubi sparse
+    804: cielo coperto
+  
+ja:
+  name: Japanese
+  main: ""
+  description:
+    200: 雷を伴う弱い雨
+    201: 雷を伴う雨
+    202: 雷を伴う強い雨
+    210: 弱い雷雨
+    211: 雷雨
+    212: 強い雷雨
+    221: 時々雷雨
+    230: 雷を伴う弱い霧雨
+    231: 雷を伴う霧雨
+    232: 雷を伴う強い霧雨
+    300: 弱い霧雨
+    301: 霧雨
+    302: 強い霧様
+    310: 弱い霧雨
+    311: 霧雨
+    312: 強い霧雨
+    313: にわか雨と霧雨
+    314: 強いにわか雨と霧雨
+    321: にわか霧雨
+    500: 小雨
+    501: 適度な雨
+    502: 強い雨
+    503: 激しい雨
+    504: 豪雨
+    511: 氷晶雨
+    520: 弱いにわか雨
+    521: にわか雨
+    522: 強いにわか雨
+    531: 時々雨
+    600: 小雪
+    601: 雪
+    602: 大雪
+    611: みぞれ
+    612: にわかみぞれ
+    615: 小雨と雪
+    616: 雨と雪
+    620: 弱いにわか雪
+    621: にわか雪
+    622: 強いにわか雪
+    701: 霧
+    711: 煙
+    721: 薄霧
+    731: 砂、ほこり、渦巻き
+    741: 霧
+    751: 砂
+    761: ほこり
+    762: 火山灰
+    771: スコール
+    781: 竜巻
+    800: 晴天
+    801: 薄い雲
+    802: 雲
+    803: 曇りがち
+    804: 厚い雲
+  
+kr:
+  name: Korean
+  main: ""
+  description:
+    200: 가벼운 비를 동반한 뇌우
+    201: 비를 동반한 뇌우
+    202: 폭우를 동반한 뇌우
+    210: 약한 뇌우
+    211: 뇌우
+    212: 강한 뇌우
+    221: 불규칙적 뇌우
+    230: 약한 연무를 동반한 뇌우
+    231: 연무를 동반한 뇌우
+    232: 강한 이슬비를 동반한 뇌우
+    300: 가벼운 안개비
+    301: 안개비
+    302: 강한 안개비
+    310: 가벼운 이슬비
+    311: 이슬비
+    312: 강한 이슬비
+    313: 소나기와 안개비
+    314: 강한 소나기와 안개비
+    321: 소나기
+    500: 실 비
+    501: 보통 비
+    502: 강한 비
+    503: 매우 강한 비
+    504: 극심한 비
+    511: 우박
+    520: 약한 소나기 비
+    521: 소나기 비
+    522: 강한 소나기 비
+    531: 불규칙적 소나기 비
+    600: 가벼운 눈
+    601: 눈
+    602: 강한 눈
+    611: 진눈깨비
+    612: 소나기 진눈깨비
+    615: 약한 비와 눈
+    616: 비와 눈
+    620: 약한 소나기 눈
+    621: 소나기 눈
+    622: 강한 소나기 눈
+    701: 박무
+    711: 연기
+    721: 연무
+    731: 모래 먼지 회오리바람
+    741: 안개
+    751: 모래
+    761: 먼지
+    762: 화산재
+    771: 스콜
+    781: 토네이도
+    800: 맑음
+    801: 약간의 구름이 낀 하늘
+    802: 구름조금
+    803: 튼구름
+    804: 온흐림
+   
+la:
+  name: Latvian
+  main: ""
+  description:
+    200: negaiss ar nokrišņiem
+    201: negaiss un lietus
+    202: negais un stiprs lietus
+    210: negaiss
+    211: pērkona negaiss
+    212: pērkona negaiss
+    221: negaiss
+    230: pērkona negaiss
+    231: pērkona negaiss
+    232: pērkona negaiss
+    300: līņā
+    301: līņā
+    302: stipri līņā
+    310: lietus
+    311: līņā
+    312: stiprs lietus
+    313: stiprs lietus
+    314: stiprs lietus
+    321: smidzina
+    500: smidzina
+    501: lietus
+    502: stiprs lietus
+    503: stiprs lietus
+    504: stiprs lietus
+    511: sasalstošais lietus
+    520: stiprs lietus
+    521: stiprs lietus
+    522: stiprs lietus
+    531: stiprs lietus
+    600: viegls sniegs
+    601: sniegs
+    602: sniegs
+    611: lietus un sniegs
+    612: lietus un sniegs
+    615: lietus un sniegs
+    616: lietus un sniegs
+    620: sniegs
+    621: slapjš sniegs
+    622: slapjš sniegs
+    701: migla
+    711: miglains
+    721: miglains
+    731: putekļu virpuļi
+    741: migla
+    751: smiltis
+    761: putekļi
+    762: vulkāniskie pelni
+    771: brāzmas
+    781: tornado
+    800: skaidrs laiks
+    801: mākoņains
+    802: mākoņains
+    803: mākoņains
+    804: mākoņains
+   
+lt:
+  name: Lithuanian
+  main: ""
+  description:
+    200: perkūnija su lengvu lietumi
+    201: perkūnija su lietumi
+    202: perkūnija su smarkiu lietumi
+    210: nedidelė perkūnija
+    211: perkūnija
+    212: smarki perkūnija
+    221: vietomis perkūnija
+    230: perkūnija su lengva dulksna
+    231: perkūnija su dulksna
+    232: perkūnija su stipria dulksna
+    300: mažo intensyvumo dulksna
+    301: dulksna
+    302: didelio intensyvumo dulksna
+    310: mažo intensyvumo dulkiantis lietus
+    311: dulkiantis lietus
+    312: didelio intensyvumo dulkiantis lietus
+    313: lietus ir dulksna
+    314: stiprus lietus ir dulksna
+    321: dulksna
+    500: lengvas lietus
+    501: nepastovus lietus
+    502: didelio intensyvumo lietus
+    503: labai stiprus lietus
+    504: ekstremalus lietus
+    511: stingdantis lietus
+    520: mažo intensyvumo lietus
+    521: lietus
+    522: didelio intensyvumo lietus
+    531: vietomis lietus
+    600: lengvas sniegas
+    601: sniegas
+    602: smarkus sniegas
+    611: šlapdriba
+    612: šlapdriba
+    615: lengvas lietus su sniegu
+    616: lietus su sniegu
+    620: lengvas sniegas
+    621: sniegas
+    622: smarkus sniegas
+    701: migla
+    711: smogas
+    721: migla
+    731: smėlis, dulkių sūkuriai
+    741: rūkas
+    751: smėlis
+    761: dulkės
+    762: vulkaniniai pelenai
+    771: škvalas
+    781: tornadas
+    800: giedra
+    801: keli debesys
+    802: mažai debesuota
+    803: debesuota su pragiedruliais
+    804: debesuota
+  
+mk:
+  name: Macedonian
+  main: ""
+  description:
+    200: грмежи со слаб дожд
+    201: грмежи со дожд
+    202: грмежи со силен дожд
+    210: слаби грмежи
+    211: грмежи
+    212: силни грмежи
+    221: многу силни грмежи
+    230: грмежи со слабо росење
+    231: грмежи со росење
+    232: грмежи со силно росење
+    300: слабо росење
+    301: росење
+    302: силно росење
+    310: слабо росење
+    311: росење
+    312: силно росење
+    313: изригвам дожд и ситен дожд
+    314: тешки туш дожд и ситен дожд
+    321: дожд
+    500: слаб дожд
+    501: слаб дожд
+    502: силен дожд
+    503: многу силен дожд
+    504: обилен дожд
+    511: град
+    520: слабо росење
+    521: роси
+    522: силно росење
+    531: повремен дожд
+    600: слаб снег
+    601: снег
+    602: силен снег
+    611: лапавица
+    612: лапавица туш
+    620: слаб снег туш
+    621: лапавица
+    622: обилните снежни врнежи туш
+    701: магла
+    711: смог
+    721: замагленост
+    731: песочен вртлог
+    741: магла
+    751: прашина од ветерот носена
+    761: прашина
+    762: вулкански пепел
+    771: налетот
+    781: торнадо
+    800: чисто небо
+    801: неколку облаци
+    802: одвоени облаци
+    803: облаци
+    804: облачно
+    
+no:
+  name: Norwegian
+  main: ""
+  description:
+    200: lyn og torden med lett regn
+    201: lyn og torden med regn
+    202: lyn og torden med kraftig regn
+    210: lett lyn og torden
+    211: lyn og torden
+    212: kraftig lyn og torden
+    221: voldsomme byger med lyn og torden
+    230: lyn og torden med lett yr
+    231: lyn og torden med yr
+    232: lyn og torden med kraftig yr
+    300: lett yr
+    301: yr
+    302: kraftig yr
+    310: lett yr og regn
+    311: yr og regn
+    312: kraftig yr og regn
+    313: yr- og regnbyger
+    314: kraftige yr- og regnbyger
+    321: yrbyger
+    500: lett regn
+    501: moderat regn
+    502: kraftig regn
+    503: svært kraftig regn
+    504: ekstremt regn
+    511: regn som fryser
+    520: lette regnbyger
+    521: regnbyger
+    522: kraftige regnbyger
+    531: voldsomme regnbyger
+    600: lett snø
+    601: snø
+    602: kraftig snø
+    611: sludd
+    612: sluddbyger
+    615: lett regn og snø
+    616: regn og snø
+    620: lette snøbyger
+    621: snøbyger
+    622: kraftige snøbyger
+    701: tåke
+    711: røyk
+    721: dis
+    731: sand- eller støvskyer
+    741: tåke
+    751: sand
+    761: støv
+    762: vulkansk aske
+    771: stormbyger
+    781: tornado
+    800: klart
+    801: enkelte skyer
+    802: spredte skyer
+    803: spredt skydekke
+    804: overskyet
+   
+nl:
+  name: Dutch
+  main: ""
+  description:
+    200: onweersbui met lichte regen
+    201: onweersbui met regen
+    202: onweersbui met zware regenval
+    210: lichte onweersbui
+    211: onweersbui
+    212: zware onweersbui
+    221: onregelmatig onweersbui
+    230: onweersbui met lichte motregen
+    231: onweersbui met motregen
+    232: onweersbui met zware motregen
+    300: lichte motregen
+    301: motregen
+    302: zware motregen
+    310: lichte motregen/regen
+    311: motregen
+    312: zware motregen/regen
+    313: stortbuien en motregen
+    314: hevige stortbuien en motregen
+    321: zware motregen
+    500: lichte regen
+    501: matige regen
+    502: zware regenval
+    503: zeer zware regenval
+    504: extreme regen
+    511: koude buien
+    520: lichte stortregen
+    521: stortregen
+    522: zware stortregen
+    531: afwisselende stortbuien
+    600: lichte sneeuw
+    601: sneeuw
+    602: hevige sneeuw
+    611: ijzel
+    612: lichte ijzel
+    620: lichte sneeuw
+    621: natte sneeuw
+    622: hevige sneeuw
+    701: mist
+    711: mist
+    721: nevel
+    731: zand/stof werveling
+    741: mist
+    751: zandstorm
+    761: mist
+    762: vulkanische as
+    771: rukwinden
+    781: tornado
+    800: onbewolkt
+    801: licht bewolkt
+    802: half bewolkt
+    803: zwaar bewolkt
+    804: geheel bewolkt
+   
+pl:
+  name: Polish
+  main: ""
+  description:
+    200: burza z lekkimi opadami deszczu
+    201: burza z opadami deszczu
+    202: burza z intensywnymi opadami deszczu
+    210: lekka burza
+    211: burza
+    212: silna burza
+    221: burza
+    230: burza z lekką mżawką
+    231: burza z mżawka
+    232: burza z intensywną mżawką
+    300: lekka mżawka
+    301: mżawka
+    302: intensywna mżawka
+    310: lekkie opady drobnego deszczu
+    311: deszcz / mżawka
+    312: intensywny deszcz / mżawka
+    313: ulewny deszcz i mżawka 
+    314: gęsty ulewny deszcz i mżawka 
+    321: silna mżawka
+    500: słabe opady deszczu
+    501: umiarkowane opady deszczu
+    502: silne opady deszczu
+    503: bardzo silne opady deszczu
+    504: ulewa
+    511: marznący deszcz
+    520: słabe, przelotne opady deszczu
+    521: deszcz
+    522: silne, przelotne opady deszczu
+    531: okazjonalne opady deszczu
+    600: słabe opady śniegu
+    601: śnieg
+    602: silne opady śniegu
+    611: deszcz ze śniegem
+    612: przelotne opady deszczu ze śniegiem
+    620: słabe przelotne opady śniegu
+    621: przelotne opady śniegu
+    622: silne opady śniegu
+    701: zamglenie
+    711: dym
+    721: zamglenia
+    731: zamieć piaskowa
+    741: mgła
+    751: piasek
+    761: pył
+    762: pył wulkaniczny
+    771: szkwał 
+    781: tornado
+    800: bezchmurnie
+    801: lekkie zachmurzenie
+    802: rozproszone chmury
+    803: pochmurno z przejaśnieniami
+    804: całkowite zachmurzenie
+   
+pt:
+  name: Portuguese
+  main: ""
+  description:
+    200: trovoada com chuva fraca
+    201: trovoada com chuva
+    202: trovoada com chuva forte
+    210: trovoada leve
+    211: trovoada
+    212: trovoada forte
+    221: trovoada irregular
+    230: trovoada com chuvisco fraco
+    231: trovoada com chuvisco
+    232: trovoada com chuvisco forte
+    300: chuvisco fraco
+    301: chuvisco
+    302: chuvisco forte
+    310: chuvisco e chuva fraca
+    311: chuvisco e chuva
+    312: chuvisco e chuva forte
+    313: aguaceiros e chuvisco 
+    314: aguaceiros fortes chuva e chuvisco
+    321: aguaceiros e chuvisco
+    500: chuva fraca
+    501: chuva moderada
+    502: chuva forte
+    503: chuva muito forte
+    504: chuva extrema
+    511: chuva com congelamento
+    520: aguaceiros fracos
+    521: aguaceiros
+    522: aguaceiros fortes
+    531: aguaceiros ocasionais
+    600: neve fraca
+    601: neve
+    602: neve forte
+    611: chuva com neve
+    612: aguaceiros com neve
+    615: chuva fraca e neve
+    616: chuva e neve
+    620: neve fraca intermitente
+    621: neve intermitente
+    622: neve forte intermitente
+    701: nevoeiro
+    711: fumo
+    721: névoa
+    731: turbilhões de areia/poeira
+    741: neblina
+    751: areia
+    761: poeira
+    762: cinzas vulcânicas
+    771: fumo
+    781: tornado
+    800: céu limpo
+    801: céu pouco nublado 
+    802: nuvens dispersas
+    803: nuvens quebradas
+    804: nublado
+    
+pt_br:
+  name: Português Brasil
+  main: ""
+  description:
+    200: trovoada com chuva fraca
+    201: trovoada com chuva
+    202: trovoada com chuva forte
+    210: tempestade com raios
+    211: trovoadas
+    212: tempestades
+    221: trovoadas
+    230: trovoada com leve garoa
+    231: trovoada com garoa
+    232: trovoada com forte garoa
+    300: garoa de leve intensidade
+    301: chuviscos
+    302: chuvas
+    310: garoa leve
+    311: chuva
+    312: chuva forte
+    313: chuva e chuviscos
+    314: chuva forte e chuviscos
+    321: chuviscos
+    500: chuva leve
+    501: chuva moderada
+    502: chuva forte
+    503: chuva muito forte
+    504: chuva extrema
+    511: chuva congelante
+    520: chuviscos com intensidade de raios
+    521: chuvas
+    522: chuvas fortes
+    531: chuva irregular
+    600: pouca neve
+    601: neve
+    602: nevasca
+    611: granizo
+    612: chuva de granizo
+    615: chuva leve e neve
+    616: chuva e neve
+    620: garoa e neve
+    621: neve
+    622: forte neve
+    701: névoa
+    711: fumaça
+    721: neblina
+    731: areia,turbilhões de poeira
+    741: névoa
+    751: chuva de areia
+    761: poeira
+    762: cinza vulcanica
+    771: rajadas
+    781: tornado
+    800: céu limpo
+    801: algumas nuvens
+    802: nuvens dispersas
+    803: nublado
+    804: nublado
+   
+ro:
+  name: Romanian
+  main: ""
+  description:
+    200: furtună cu ploaie ușoară
+    201: furtună
+    202: furtună cu ploaie puternică
+    210: furtună ușoară
+    211: furtună
+    212: furtună puternică
+    221: furtună aprigă
+    230: furtună cu burniță
+    231: furtună cu burniță
+    232: furtună cu burniță
+    300: burniță de intensitate joasă
+    301: burniță
+    302: burniță de intensitate mare
+    310: burniță de intensitate joasă
+    311: burniță
+    312: burniță de intensitate mare
+    313: spew ploaie și burniță
+    314: ploaie de ploaie grea și burniță
+    321: burniță
+    500: ploaie ușoară
+    501: ploaie
+    502: ploaie puternică
+    503: ploaie torențială
+    504: ploaie extremă
+    511: ploaie înghețată
+    520: ploaie de scurtă durată
+    521: ploaie de scurtă durată
+    522: ploaie de scurtă durată
+    531: dusuri ocazionale
+    600: ninsoare ușoară
+    601: ninsoare
+    602: ninsoare puternică
+    611: lapoviță
+    612: cabină de duș lapoviță
+    620: dus ninsoare ușoară
+    621: ninsoare de scurtă durată
+    622: duș zăpadă grea
+    701: ceață
+    711: ceață
+    721: ceață
+    731: vârtejuri de nisip
+    741: ceață
+    751: nisip
+    761: praf
+    762: cenușă vulcanică
+    771: furtuni
+    781: tornadă
+    800: cer senin
+    801: câțiva nori
+    802: nori împrăștiați
+    803: cer fragmentat
+    804: cer acoperit de nori
+   
+ru:
+  name: Russian
+  main: ""
+  description:
+    200: гроза с небольшим дождём
+    201: гроза с дождём 
+    202: гроза с сильным дождём
+    210: небольшая гроза 
+    211: гроза
+    212: сильная гроза
+    221: местами гроза
+    230: гроза с небольшой моросью
+    231: гроза с моросью
+    232: гроза с сильной моросью
+    300: небольшая морось
+    301: морось
+    302: сильная морось
+    310: небольшой моросящий дождь
+    311: моросящий дождь
+    312: сильный моросящий дождь
+    313: проливной дождь с моросью 
+    314: сильный проливной дождь с моросью
+    321: мелкий дождь
+    500: небольшой дождь
+    501: дождь
+    502: сильный дождь
+    503: проливной дождь
+    504: очень сильный проливной дождь
+    511: ледяной дождь
+    520: небольшой проливной дождь
+    521: проливной дождь
+    522: сильный проливной дождь
+    531: местами проливной дождь
+    600: небольшой снег
+    601: снег
+    602: сильный снег
+    611: ледяная крупа
+    612: интенсивная ледяная крупа
+    615: небольшой снег с дождём
+    616: снег с дождём
+    620: небольшой снегопад
+    621: снегопад
+    622: сильный снегопад
+    701: туман
+    711: дымка
+    721: мгла
+    731: песчаная буря
+    741: плотный туман
+    751: песчаный ветер
+    761: пыльная буря
+    762: вулканический пепел
+    771: шквальный ветер
+    781: торнадо
+    800: ясно
+    801: небольшая облачность
+    802: переменная облачность
+    803: облачно с прояснениями
+    804: пасмурно
+    
+se:
+  name: Swedish
+  main: ""
+  description:
+    200: åskväder med lätt regn
+    201: åskväder med regn
+    202: åskväder med kraftigt regn
+    210: svagt åskväder
+    211: åskväder
+    212: kraftigt åskväder
+    221: visst åskväder
+    230: åskväder med lätt duggregn
+    231: åskväder med duggregn
+    232: åskväder med kraftigt duggregn
+    300: lätt duggregn
+    301: duggregn
+    302: kraftigt duggregn
+    310: lätt duggregn
+    311: duggregn
+    312: kraftigt duggregn
+    313: regnskurar och duggregn
+    314: kraftiga regnskurar och duggregn
+    321: skurar med duggregn
+    500: lätt regn
+    501: något regn
+    502: måttligt regn
+    503: kraftigt regn
+    504: rikligt med regn
+    511: underkylt regn
+    520: lätta regnskurar
+    521: regnskurar
+    522: kraftiga regnskurar
+    531: enstaka regnskurar
+    600: lätt snöfall
+    601: snöfall
+    602: kraftigt snöfall
+    611: snöblandat regn
+    612: skurar med snöblandat regn
+    615: lätt regn och snö
+    616: regn och snö
+    620: lätta snöbyar
+    621: snöbyar
+    622: kraftiga snöbyar
+    701: dimma
+    711: smogg
+    721: dis
+    731: sandstorm
+    741: dimma
+    751: sand
+    761: damm
+    762: vulkanisk aska
+    771: vindstötar
+    781: tromb
+    800: klar himmel
+    801: lätt molnighet
+    802: växlande molnighet
+    803: molnigt
+    804: mulet
+   
+sk:
+  name: Slovak
+  main: ""
+  description:
+    200: búrka so slabým dažďom
+    201: búrka s dažďom
+    202: búrka so silným dažďom
+    210: mierna búrka
+    211: búrka
+    212: silná búrka
+    221: prudká búrka
+    230: búrka so slabým mrholením
+    231: búrka s mrholením
+    232: búrka so silným mrholením
+    300: slabé mrholenie
+    301: mrholenie
+    302: silné mrholenie
+    310: slabé popŕchanie
+    311: popŕchanie
+    312: silné popŕchanie
+    313: prehánka s mrholením
+    314: silná prehánka s mrholením
+    321: jemné mrholenie
+    500: slabý dážď
+    501: mierny dážď
+    502: silný dážď
+    503: veľmi silný dážď
+    504: extrémny dážď
+    511: mrznúci dážď
+    520: slabá prehánka
+    521: prehánka
+    522: silná prehánka
+    531: občasné prehánky
+    600: slabé sneženie
+    601: sneženie
+    602: silné sneženie
+    611: dážď so snehom
+    612: slabá prehánka dažďa a snehu
+    620: slabá snehová prehánka
+    621: snehová prehánka
+    622: silná snehová prehánka
+    701: hmla
+    711: dym
+    721: opar
+    731: pieskové/prašné víry
+    741: hmla
+    751: piesok
+    761: prach
+    762: sopečný popol
+    771: búrka
+    781: tornádo
+    800: jasná obloha
+    801: takmer jasno
+    802: polojasno
+    803: oblačno
+    804: zamračené
+    
+sl:
+  name: Slovenian
+  main: ""
+  description:
+    200: nevihta z rahlim dežjem
+    201: nevihta z dežjem
+    202: nevihta z močnim dežjem
+    210: manjša nevihta
+    211: nevihta
+    212: močna nevihta
+    221: občasna nevihta
+    230: nevihta z rahlim rošenjem
+    231: nevihta z rošenjem
+    232: nevihta z močnim rošenjem
+    300: rahlo rošenje
+    301: rošenje
+    302: rošenje močnejše intenzitete
+    310: pršenje šibkejše intenzitete
+    311: pršenje šibkejše intenzitete
+    312: pršenje močnejše intenzitete
+    313: pršenje šibkejše intenzitete
+    314: pršenje in močnejši dež
+    321: pršenje in dež
+    500: rahel dež
+    501: dež
+    502: močan dež
+    503: zelo močan dež
+    504: ekstremni dež
+    511: dež ki zmrzuje
+    520: dež šibkejše intenzitete
+    521: dež
+    522: dež močnejše intenzitete
+    531: občasni dež
+    600: rahlo sneženje
+    601: sneženje
+    602: močno sneženje
+    611: žled
+    612: ledeni dež
+    615: rahel dež s snegom
+    616: dež s snegom
+    620: rahlo sneženje
+    621: sneg
+    622: močno sneženje
+    701: megla
+    711: meglica
+    721: para
+    731: pesek, vrtinčenje prahu
+    741: megla
+    751: pesek
+    761: prah
+    762: vulkanski pepel
+    771: sunki
+    781: tornado
+    800: jasno
+    801: pretrgana oblačnost
+    802: delno oblačno
+    803: pretežno oblačno
+    804: oblačno
+   
+sp:
+  name: Spanish
+  main: ""
+  description:
+    200: tormenta con lluvia ligera
+    201: tormenta con lluvia
+    202: tormenta con lluvia intensa
+    210: ligera tormenta
+    211: tormenta
+    212: fuerte tormenta
+    221: tormenta irregular
+    230: tormenta con llovizna ligera
+    231: tormenta con llovizna
+    232: tormenta con llovizna intensa
+    300: llovizna ligera
+    301: llovizna
+    302: llovizna de gran intensidad
+    310: lluvia y llovizna ligera
+    311: lluvia y llovizna
+    312: lluvia y llovizna de gran intensidad
+    313: spew lluvia y llovizna
+    314: lluvia y lluvia fuerte
+    321: chubasco
+    500: lluvia ligera
+    501: lluvia moderada
+    502: lluvia de gran intensidad
+    503: lluvia muy fuerte
+    504: lluvia muy fuerte
+    511: lluvia helada
+    520: chubasco de ligera intensidad
+    521: chubasco
+    522: chubasco de gran intensidad
+    531: chubascos ocasionales
+    600: nevada ligera
+    601: nieve
+    602: nevada intensa
+    611: aguanieve
+    612: lluvia de aguanieve
+    620: lluvia ligera
+    621: chubasco de nieve
+    622: fuerte lluvia de nieve
+    701: niebla
+    711: humo
+    721: niebla
+    731: torbellinos de arena/polvo
+    741: bruma 
+    751: arena
+    761: polvo
+    762: ceniza volcánica
+    771: ráfagas
+    781: tornado
+    800: cielo claro
+    801: algo de nubes
+    802: nubes dispersas
+    803: nubes rotas
+    804: nubes
+    
+sr:
+  name: Serbian
+  main: ""
+  description:
+    200: грмљавина са слабом кишом
+    201: грмљавина са кишом
+    202: грмљавина са јаком кишом
+    210: слаба грмљавина
+    211: грмљавина
+    212: јака грмљавина
+    221: изузетно јака грмљавина
+    230: грмљавина са слабим ромињањем
+    231: грмљавина са ромињањем
+    232: грмљавина са јаким ромињањем
+    300: ромињање слабог интензитета
+    301: ромињање
+    302: ромињање јаког интензитета
+    310: слабо ромињање кише
+    311: ромињање кише
+    312: јако ромињање кише
+    313: пљусак и ромињање
+    314: јак пљусак и ромињање
+    321: јако ромињање
+    500: кишица
+    501: умерена киша
+    502: киша јаког интензитета
+    503: киша веома јаког интензитета
+    504: снажна киша
+    511: ледена киша
+    520: слаб краткотрајни пљусак
+    521: пљусак
+    522: јак краткотрајни пљусак
+    531: изузетно јак пљусак
+    600: слаб снег
+    601: снег
+    602: јак снег
+    611: суснежица
+    612: налет суснежице
+    615: слаба киша и снег
+    616: киша и снег
+    620: слабе снежне падавине
+    621: снежне падавине
+    622: јаке снежне падавине
+    701: сумаглица
+    711: смог
+    721: измаглица
+    731: песак, вртлози прашине
+    741: магла
+    751: песак
+    761: прашина
+    762: вулкански пепео
+    771: олуја
+    781: торнадо
+    800: ведро небо
+    801: местимични облаци
+    802: разбацани облаци
+    803: испрекидани облаци
+    804: ниски облаци
+th:
+  name: Thai
+  main: ""
+  description:
+    200: พายุฟ้าคะนองพร้อมฝนเล็กน้อย
+    201: พายุฟ้าคะนองพร้อมฝน
+    202: พายุฟ้าคะนองพร้อมฝนหนัก
+    210: พายุฟ้าคะนองเล็กน้อย
+    211: พายุฟ้าคะนอง
+    212: พายุฟ้าคะนองหนัก
+    221: พายุฟ้าคะนองเป็นช่วง ๆ
+    230: พายุฟ้าคะนองพร้อมฝนปรอยเล็กน้อย
+    231: พายุฟ้าคะนองพร้อมฝนปรอย
+    232: พายุฟ้าคะนองพร้อมฝนปรอยหนัก
+    300: ฝนปรอยแบบไม่แรง
+    301: ฝนปรอย
+    302: ฝนปรอยแบบแรง
+    310: ฝนพร้อมฝนปรอยแบบไม่แรง
+    311: ฝนพร้อมฝนปรอย
+    312: ฝนพร้อมฝนปรอยแบบแรง
+    313: ฝนซู่และฝนปรอย
+    314: ฝนซู่และฝนปรอยหนัก
+    321: ฝนปรอยแบบฝนซู่
+    500: ฝนเบา ๆ
+    501: ฝนปานกลาง
+    502: ฝนแบบแรง
+    503: ฝนตกหนักมาก
+    504: ฝนตกขั้นรุนแรง
+    511: ฝนจับตัวเป็นน้ำแข็ง
+    520: ฝนซู่แบบไม่แรง
+    521: ฝนซู่
+    522: ฝนซู่แบบแรง
+    531: ฝนซู่เป็นช่วง ๆ
+    600: หิมะเล็กน้อย
+    601: หิมะ
+    602: หิมะตกหนัก
+    611: ฝนลูกเห็บ
+    612: ฝนลูกเห็บแบบฝนซู่
+    615: ฝนและหิมะเล็กน้อย
+    616: ฝนและหิมะ
+    620: หิมะเล็กน้อยช่วงสั้น ๆ 
+    621: หิมะตกช่วงสั้น ๆ
+    622: หิมะตกหนักช่วงสั้น ๆ 
+    701: หมอก
+    711: ควัน
+    721: เมฆหมอก
+    731: ทราย ลมฝุ่นหมุน
+    741: หมอก
+    751: ทราย
+    761: ฝุ่น
+    762: เถ้าภูเขาไฟ
+    771: ลมสควอลล์
+    781: ทอร์นาโด
+    800: ท้องฟ้าแจ่มใส
+    801: เมฆเล็กน้อย
+    802: เมฆกระจาย
+    803: เมฆเป็นหย่อม ๆ
+    804: เมฆเต็มท้องฟ้า
+tr:
+  name: Turkish
+  main: ""
+  description:
+    200: gök gürültülü hafif yağmurlu
+    201: gök gürültülü yağmurlu
+    202: gök gürültülü sağanak yağışlı
+    210: hafif sağanak
+    211: sağanak
+    212: şiddetli sağanak
+    221: aralıklı sağanak
+    230: gök gürültülü hafif yağışlı
+    231: gök gürültülü yağışlı
+    232: gök gürültülü şiddetli yağışlı
+    300: yer yer hafif yoğunluklu yağış
+    301: yer yer yağışlı
+    302: yer yer yoğun yağışlı
+    310: yer yer hafif yağışlı
+    311: yer yer yağışlı
+    312: yer yer yoğun yağışlı
+    313: yağmur ve çiselemek
+    314: yoğun yağışlı duş ve yağmur
+    321: yer yer sağanak yağışlı
+    500: hafif yağmur
+    501: orta şiddetli yağmur
+    502: şiddetli yağmur
+    503: çok şiddetli yağmur
+    504: aşırı yağmur
+    511: yağışlı ve soğuk hava
+    520: kısa süreli hafif yoğunluklu yağmur
+    521: kısa süreli yağmur
+    522: kısa süreli şiddetli yağmur
+    531: ara sıra duşlar
+    600: hafif kar yağışlı
+    601: kar yağışlı
+    602: yoğun kar yağışlı
+    611: karla karışık yağmurlu
+    612: karışık duş
+    620: hafif kar duşu
+    621: kısa sürelü kar yağışı
+    622: ağır kar duşu
+    701: sisli
+    711: sisli
+    721: hafif sisli
+    731: kum/toz fırtınası
+    741: sisli
+    751: kum
+    761: toz
+    762: volkanik kül
+    771: feryat figan
+    781: kasırga
+    800: açık
+    801: az bulutlu
+    802: parçalı az bulutlu
+    803: parçalı bulutlu
+    804: kapalı
+    
+ua:
+  name: Ukrainian
+  main: ""  
+  description:
+    200: гроза та легкий дощ
+    201: гроза та дощ
+    202: гроза та злива
+    210: легка гроза
+    211: гроза
+    212: сильна гроза
+    221: короткочасна гроза
+    230: гроза та легка мряка
+    231: гроза та мряка
+    232: гроза та сильна мряка
+    300: слабка мряка
+    301: мряка
+    302: сильна мряка
+    310: легка мряка та дощ
+    311: мряка та дощ
+    312: сильна мряка та дощ
+    313: проливний дощ та мряка
+    314: сильний проливний дощ та мряка
+    321: дощова мряка
+    500: легкий дощ
+    501: помірний дощ
+    502: сильний дощ
+    503: дуже сильний дощ
+    504: надзвичайно сильний дощ
+    511: переохолоджений дощ
+    520: легка злива
+    521: злива
+    522: сильна злива
+    531: короткочасна злива
+    600: легкий сніг
+    601: сніг
+    602: сильний сніг
+    611: мокрий сніг
+    612: мокра хуртовина
+    615: легкий дощ та сніг
+    616: дощ та сніг
+    620: легка хуртовина
+    621: хуртовина
+    622: сильна хуртовина
+    701: димка
+    711: дим
+    721: імла
+    731: пісок, пилові бурі
+    741: туман
+    751: пісок
+    761: пил
+    762: вулканічний попіл
+    771: шквальний вітер
+    781: смерч
+    800: чисте небо
+    801: кілька хмар
+    802: уривчасті хмари
+    803: рвані хмари
+    804: хмарно
+    
+vi:
+  name: vietnamese
+  main: ""
+  description:
+    200: giông bão và Mưa nhẹ
+    201: giông bão và Mưa
+    202: giông bão Mưa lớn
+    210: giông bão có chớp giật
+    211: bão
+    212: giông bão lớn
+    221: bão vài nơi
+    230: giông bão và Mưa phùn nhẹ
+    231: giông bão với mưa phùn
+    232: giông bão với mưa phùn nặng
+    300: ánh sáng cường độ mưa phùn
+    301: mưa phùn
+    302: mưa phùn cường độ nặng
+    310: mưa phùn nhẹ
+    311: mưa và mưa phùn
+    312: mưa và mưa phùn nặng
+    313: mưa mưa và mưa phùn
+    314: mưa mưa và mưa phùn
+    321: mưa rào và mưa phùn
+    500: mưa nhẹ
+    501: mưa vừa
+    502: mưa cường độ nặng
+    503: mưa rất nặng
+    504: mưa lốc
+    511: mưa lạnh
+    520: mưa rào nhẹ
+    521: mưa rào
+    522: mưa rào cường độ nặng
+    531: thỉnh thoảng tắm
+    600: tuyết rơi nhẹ
+    601: tuyết
+    602: tuyết nặng hạt
+    611: mưa đá
+    612: tắm mưa
+    620: ánh sáng tuyết tắm
+    621: tuyết mù trời
+    622: mưa tuyết nặng
+    701: sương mờ
+    711: khói bụi
+    721: đám mây
+    731: bão cát và lốc xoáy
+    741: sương mù
+    751: cát
+    761: bụi
+    762: tro núi lửa
+    771: các vụ xáo trộn
+    781: cơn lốc xoáy
+    800: bầu trời quang đãng
+    801: mây thưa
+    802: mây rải rác
+    803: mây cụm
+    804: mây đen u ám
+    
+zh_cn:
+  name: Chinese Simplified
+  main: ""
+  description:
+    200: 雷阵雨
+    201: 雷阵雨
+    202: 雷阵雨
+    210: 雷阵雨
+    211: 雷阵雨
+    212: 雷阵雨
+    221: 雷阵雨
+    230: 雷阵雨
+    231: 雷阵雨
+    232: 雷阵雨
+    300: 小雨
+    301: 小雨
+    302: 大雨
+    310: 小雨
+    311: 小雨
+    312: 大雨
+    313: 淋雨和毛毛雨
+    314: 大雨淋雨和毛毛雨
+    321: 阵雨
+    500: 小雨
+    501: 中雨
+    502: 大雨
+    503: 大雨
+    504: 暴雨
+    511: 冻雨
+    520: 阵雨
+    521: 阵雨
+    522: 大雨
+    531: 偶尔淋浴
+    600: 小雪
+    601: 雪
+    602: 大雪
+    611: 雨夹雪
+    612: 雨淋淋浴
+    620: 轻雪淋浴
+    621: 阵雪
+    622: 大雪淋浴
+    701: 薄雾
+    711: 烟雾
+    721: 薄雾
+    731: 沙旋风
+    741: 大雾
+    751: 沙子
+    761: 灰尘
+    762: 火山灰
+    771: 哗啦啦
+    781: 龙卷风
+    800: 晴
+    801: 晴，少云
+    802: 多云
+    803: 多云
+    804: 阴，多云
+   
+zh_tw:
+  name: Chinese Traditional
+  main: ""
+  description:
+    200: 雷陣雨
+    201: 雷陣雨
+    202: 雷陣雨
+    210: 雷陣雨
+    211: 雷陣雨
+    212: 雷陣雨
+    221: 雷陣雨
+    230: 雷陣雨
+    231: 雷陣雨
+    232: 雷陣雨
+    300: 小雨
+    301: 小雨
+    302: 大雨
+    310: 小雨
+    311: 小雨
+    312: 大雨
+    313: 淋雨和毛毛雨
+    314: 大雨淋雨和毛毛雨
+    321: 陣雨
+    500: 小雨
+    501: 中雨
+    502: 大雨
+    503: 大雨
+    504: 暴雨
+    511: 凍雨
+    520: 陣雨
+    521: 陣雨
+    522: 大雨
+    531: 偶尔淋浴
+    600: 小雪
+    601: 雪
+    602: 大雪
+    611: 雨夾雪
+    612: 雨淋淋浴
+    620: 輕雪淋浴
+    621: 陣雪
+    622: 大雪淋浴
+    701: 薄霧
+    711: 煙霧
+    721: 薄霧
+    731: 沙旋風
+    741: 大霧
+    751: 沙子
+    761: 灰塵
+    762: 火山灰
+    771: 嘩啦啦
+    781: 龍捲風
+    800: 晴
+    801: 晴，少雲
+    802: 多雲
+    803: 多雲
+    804: 陰，多雲
+  zu:
+  name: Zulu
+  main: ""
+  description:
+    200: ukuduma okuhambisana nemikhemezelo
+    201: ukuduma okuhambisana nemvula
+    202: ukuduma okuhambisana nemvula enamandla
+    210: ukuduma okungatheni
+    211: ukuduma 
+    212: ukuduma okunamandla
+    221: ukuduma okuhamba kubuye
+    230: ukuduma okuqeqebulayo
+    231: ukuduma okuhambisana namaconsana
+    232: ukuduma okuhambisana namaconsi abanzi
+    300: amathe ezimpukane
+    301: amaconsana
+    302: amaconsi anamandlanyana
+    310: amathe ezimpukane nemvudlana
+    311: imikhizwana
+    312: amaconsi anamandlanyana nemvudlana
+    313: amathe ezimpukane nemikhizwana
+    314: imvula enamandla nemikhemezelo
+    321: imvudlana engatheni
+    500: imvudlana
+    501: imvula ekahle
+    502: imvula enamandla
+    503: imvula enkulu kakhulu
+    504: imvula enamdla amakhulu
+    511: imvula ebanda kakhulu
+    520: imvula encane 
+    521: imikhemezelo
+    522: imvula enamandla kakhulu
+    531: imikhemezelo ebhedayo
+    600: isithwathwa
+    601: yiqhwa
+    602: umkhithiko onamandla
+    611: imikhithikwana
+    612: imikhithiko emincane
+    615: emvudlana nomkhithiko
+    616: imvula nomkhithiko
+    620: imikhithiko engenamandla
+    621: imikhithiko engelutho
+    622: imikhithiko enamandla
+    701: inkungu
+    711: intuthu
+    721: ihezi
+    731: inhlabathi, izintuli
+    741: ifogi
+    751: inhlabathi
+    761: izintuli
+    762: umlotha wentabamlilo
+    771: isiphepho
+    781: ithonado
+    800: isibhakabhaka esingenalutho
+    801: gqwagqwa ngamafu
+    802: amafu lapho nalapho
+    803: amafu angenamandla
+    804: liguqubele
+sq:
+  name: Albanian
+  main: ""
+  description:
+    200: stuhi me shi të lehtë
+    201: stuhi me shi
+    202: stuhi me shi të madh
+    210: stuhi e lehtë
+    211: stuhi
+    212: stuhi e rëndë
+    221: stuhi e rrëmbyeshme
+    230: stuhi me rrufe të lehta
+    231: stuhi me rrufe
+    232: stuhi me reshje të medha
+    300: rrufe e intezitetit të lehte
+    301: rrufe
+    302: shi me rrufe të medha
+    310: shi me rrufe
+    311: shi me rrufe
+    312: shi i me rrufe të intensitet të lartë
+    313: shiu me rrufe
+    314: shi i intezitetit të larte me rrufe
+    321: rrufe
+    500: shi i lehtë
+    501: shi mesatar
+    502: shi me intensitet të lartë
+    503: shi shumë i madh
+    504: shi ekstrem
+    511: shi me ngrica
+    520: shi me intensitet të lehtë
+    521: rrebesh shiu
+    522: shi i intezitetit të lehtë
+    531: shi i dendur
+    600: borë e lehtë
+    601: borë
+    602: borë e rëndë
+    611: borë me shi
+    612: bresher
+    615: shi i lehtë dhe borë
+    616: shi dhe borë
+    620: bororë me shi
+    621: borë
+    622: borë e intezitetit të lartë
+    701: mjegull
+    711: mjegull
+    721: mjegull e dendur
+    731: pluhur, vorbulla pluhuri
+    741: mjegull
+    751: rërë
+    761: pluhur
+    762: hir vullkanik
+    771: shtrëngatë
+    781: tornado
+    800: i kthjellët
+    801: pjesërisht me re
+    802: re të shpërndara
+    803: i vrenjtur
+    804: të mbuluar me re
+be:
+  name: Belarussian
+  main: ""
+  description:
+    200: навальніца з невялікім дажджом
+    201: навальніца з дажджом
+    202: навальніца з моцным дажджом
+    210: невялікая навальніца
+    211: навальніца
+    212: моцная навальніца
+    221: навальніца
+    230: навальніца з невялікай імглой
+    231: навальніца з імглой
+    232: навальніца з моцнай імглой
+    300: невялікая імгла
+    301: лёгкі дождж, імгла
+    302: кароткачасовы дождж
+    310: невялікая імгла з дажджом
+    311: лёгкі дождж
+    312: лёгкі інтэнсіўны дождж
+    313: кароткачасовы дождж з імглой
+    314: моцны кароткачасовы дождж з імглой
+    321: кароткачасовая імгла
+    500: лёгкі дождж
+    501: умераны дождж
+    502: моцны дождж
+    503: вельмі моцны дождж
+    504: лівень
+    511: дождж з градам
+    520: лёгкі кароткачасовы дождж
+    521: кароткачасовы дождж
+    522: моцны кароткачасовы дождж
+    531: кароткачасовыя дажджы
+    600: невялікі снег
+    601: снег
+    602: моцны снег
+    611: мокры снег
+    612: кароткачасовы мокры снег
+    615: лёгкі снег з дажджом
+    616: снег з дажджом
+    620: лёгкі кароткачасовы снег
+    621: кароткачасовы снег
+    622: моцны кароткачасовы снег
+    701: туман
+    711: дым
+    721: лёгкі туман
+    731: віхор пяску і пылу
+    741: туман
+    751: пясок
+    761: пыл
+    762: вулканічны попел
+    771: шквалы
+    781: тарнада
+    800: ясна
+    801: невялікая воблачнасць
+    802: воблачна
+    803: пераменная воблачнасць
+    804: пахмурна

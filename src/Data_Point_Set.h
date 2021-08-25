@@ -1,121 +1,116 @@
-// The structures below are the repository for the data values extracted from the
-// JSON message. The structures are popolated with the extracted data by the "value()"
-// member function in the main OWM_for_ESP.cpp file.
+// The structures below are the repository for the data values extracted from the JSON message.
+// The structures are populated with the extracted data by the .value() method in the OWM_for_ESP.cpp file.
 
 // The content is 255 or "" when first created.
 
 typedef struct OWM_current { // Structure for current weather
 
-  // current
   float    lat = 255;
   float    lon = 255;
-  uint32_t dt = 255;
-  uint32_t timezone_offset = 255;
-  uint32_t sunrise = 255;
-  uint32_t sunset = 255;
-  float    temp = 255;
-  float    feels_like = 255;
-  uint16_t pressure = 255;
+  uint32_t cityId = 255; // Only Current API
+ #ifdef ENABLE_STRINGS
+  String   cityName; // Only Current API
+  String   countryCode; // Only Current API
+  String   timezoneName; // Only One Call API
+ #endif
+
+  uint32_t timezoneOffset = 255;
+  uint32_t serverUpdateTime = 255;
+  uint32_t sunriseTime = 255;
+  uint32_t sunsetTime = 255;
+
+  float    mainTemp = 255;
+  float    feelsLikeTemp = 255;
+  float    minTemp = 255; // Only Current API
+  float    maxTemp = 255; // Only Current API
+
   uint8_t  humidity = 255;
-  uint8_t  clouds = 255;
+  uint16_t pressureSeaLevel = 255;
+  uint16_t pressureGroundLevel = 255; // Only Current API
+  float    windSpeed = 255;
+  float    windGust = 255;
+  uint16_t windDirection = 255;
+
+  float    dewPoint = 255; // Only One Call API
+  float    rainForLast1h = 0; // Sometimes OWM doesn't send this data because it is not raining
+  float    snowForLast1h = 0; // Sometimes OWM doesn't send this data because it is not snowing
+  float    rainForLast3h = 255; // Only Current API
+  float    snowForLast3h = 255; // Only Current API
+
+  uint8_t  cloudiness = 255;
   uint32_t visibility = 255;
-  float    wind_speed = 255;
-  float    wind_gust = 255;
-  uint16_t wind_deg = 255;
-  float    rain_1h = 255;
-  float    snow_1h = 255;
-  uint16_t id = 255;
-  String   main;
-  String   description;
-  String   icon;
+  float    ultravioletIndex = 255; // Only One Call API
 
-  // only onecall API
-  String   timezone = "";
-  float    dew_point = 255;
-  float    uvi = 255;
-
-  // only current API
-  uint32_t city_id = 255;
-  String   city_name;
-  String   country;
-  float    rain_3h = 255;
-  float    snow_3h = 255;
-  float    temp_min = 255;
-  float    temp_max = 255;
-  uint16_t sea_level = 255;
-  uint16_t grnd_level = 255;
+  uint16_t weatherCondId = 255;
+  uint8_t  weatherIconId = 255;
 
 } OWM_current;
 
 typedef struct OWM_hourly { // Structure for hourly weather
 
-  // hourly
-  uint32_t dt[MAX_HOURS] = { 255 };
-  float    temp[MAX_HOURS] = { 255 };
-  float    feels_like[MAX_HOURS] = { 255 };
-  uint16_t pressure[MAX_HOURS] = { 255 };
-  uint8_t  humidity[MAX_HOURS] = { 255 };
-  float    dew_point[MAX_HOURS] = { 255 };
-  float    uvi[MAX_HOURS] = { 255 };
-  uint8_t  clouds[MAX_HOURS] = { 255 };
-  uint16_t visibility[MAX_HOURS] = { 255 };
-  float    wind_speed[MAX_HOURS] = { 255 };
-  float    wind_gust[MAX_HOURS] = { 255 };
-  uint16_t wind_deg[MAX_HOURS] = { 255 };
-  float    rain[MAX_HOURS] = { 255 };
-  float    snow[MAX_HOURS] = { 255 };
+  uint32_t time[MAX_HOURS] = { 255 };
 
-  // hourly.weather
-  uint16_t id[MAX_HOURS] = { 255 };
-  String   main[MAX_HOURS];
-  String   description[MAX_HOURS];
-  String   icon[MAX_HOURS];
+  float    mainTemp[MAX_HOURS] = { 255 };
+  float    feelsLikeTemp[MAX_HOURS] = { 255 };
+
+  uint8_t  humidity[MAX_HOURS] = { 255 };
+  uint16_t pressureSeaLevel[MAX_HOURS] = { 255 };
+  float    windSpeed[MAX_HOURS] = { 255 };
+  float    windGust[MAX_HOURS] = { 255 };
+  uint16_t windDirection[MAX_HOURS] = { 255 };
+
+  float    dewPoint[MAX_HOURS] = { 255 };
+  float    rainForLast1h[MAX_HOURS] = { 0 }; // Sometimes OWM doesn't send this data because it is not raining
+  float    snowForLast1h[MAX_HOURS] = { 0 }; // Sometimes OWM doesn't send this data because it is not snowing
+
+  uint8_t  cloudiness[MAX_HOURS] = { 255 };
+  uint16_t visibility[MAX_HOURS] = { 255 };
+  float    ultravioletIndex[MAX_HOURS] = { 255 };
   float    pop[MAX_HOURS];
+
+  uint16_t weatherCondId[MAX_HOURS] = { 255 };
+  uint8_t  weatherIconId[MAX_HOURS] = { 255 };
+
 } OWM_hourly;
 
 typedef struct OWM_daily { // Structure for daily weather
 
-  // daily
-  uint32_t dt[MAX_DAYS] = { 255 };  // dt
-  uint32_t sunrise[MAX_DAYS] = { 255 };
-  uint32_t sunset[MAX_DAYS] = { 255 };
-  uint32_t moonrise[MAX_DAYS] = { 255 };
-  uint32_t moonset[MAX_DAYS] = { 255 };
-  float    moon_phase[MAX_DAYS] = { 255 };
-  
-  // daily.temp
-  float    temp_morn[MAX_DAYS] = { 255 };
-  float    temp_day[MAX_DAYS] = { 255 };
-  float    temp_eve[MAX_DAYS] = { 255 };
-  float    temp_night[MAX_DAYS] = { 255 };
-  float    temp_min[MAX_DAYS] = { 255 };
-  float    temp_max[MAX_DAYS] = { 255 };
+  uint32_t time[MAX_DAYS] = { 255 };
+  uint32_t sunriseTime[MAX_DAYS] = { 255 };
+  uint32_t sunsetTime[MAX_DAYS] = { 255 };
+  uint32_t moonriseTime[MAX_DAYS] = { 255 };
+  uint32_t moonsetTime[MAX_DAYS] = { 255 };
 
-  // daily.feels_like
-  float    feels_like_morn[MAX_DAYS] = { 255 };
-  float    feels_like_day[MAX_DAYS] = { 255 };
-  float    feels_like_eve[MAX_DAYS] = { 255 };
-  float    feels_like_night[MAX_DAYS] = { 255 };
+  float    minTemp[MAX_DAYS] = { 255 };
+  float    maxTemp[MAX_DAYS] = { 255 };
 
-  // daily
-  uint16_t pressure[MAX_DAYS] = { 255 };
+  float    morningTemp[MAX_DAYS] = { 255 };
+  float    dayTemp[MAX_DAYS] = { 255 };
+  float    eveningTemp[MAX_DAYS] = { 255 };
+  float    nightTemp[MAX_DAYS] = { 255 };
+
+  float    morningFeelsLikeTemp[MAX_DAYS] = { 255 };
+  float    dayFeelsLikeTemp[MAX_DAYS] = { 255 };
+  float    eveningFeelsLikeTemp[MAX_DAYS] = { 255 };
+  float    nightFeelsLikeTemp[MAX_DAYS] = { 255 };
+
   uint8_t  humidity[MAX_DAYS] = { 255 };
-  float    dew_point[MAX_DAYS] = { 255 };
-  float    wind_speed[MAX_DAYS] = { 255 };
-  float    wind_gust[MAX_DAYS] = { 255 };
-  uint16_t wind_deg[MAX_DAYS] = { 255 };
-  uint8_t  clouds[MAX_DAYS] = { 255 };
-  float    uvi[MAX_DAYS] = { 255 };
-  uint32_t visibility[MAX_DAYS] = { 255 };
+  uint16_t pressureSeaLevel[MAX_DAYS] = { 255 };
+  float    windSpeed[MAX_DAYS] = { 255 };
+  float    windGust[MAX_DAYS] = { 255 };
+  uint16_t windDirection[MAX_DAYS] = { 255 };
 
-  float    rain[MAX_DAYS] = { 255 };
-  float    snow[MAX_DAYS] = { 255 };
+  float    dewPoint[MAX_DAYS] = { 255 };
+  float    rain[MAX_DAYS] = { 0 }; // Sometimes OWM doesn't send this data because it is not raining
+  float    snow[MAX_DAYS] = { 0 }; // Sometimes OWM doesn't send this data because it is not snowing
 
-  // daily.weather
-  uint16_t id[MAX_DAYS] = { 255 };
-  String   main[MAX_DAYS];
-  String   description[MAX_DAYS];
-  String   icon[MAX_DAYS];
+  uint8_t  cloudiness[MAX_DAYS] = { 255 };
+  float    ultravioletIndex[MAX_DAYS] = { 255 };
   float    pop[MAX_DAYS];
+
+  float    moonPhase[MAX_DAYS] = { 255 };
+
+  uint16_t weatherCondId[MAX_DAYS] = { 255 };
+  uint8_t  weatherIconId[MAX_DAYS] = { 255 };
 
 } OWM_daily;

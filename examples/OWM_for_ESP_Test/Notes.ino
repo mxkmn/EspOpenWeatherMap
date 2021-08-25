@@ -1,72 +1,65 @@
 /*
-  [units] optional (default is "metric")
-    "standard", "metric" and "imperial" units are available (these are all possible units at the moment)
-
-    standard uses Kelvin units and meters/sec
-    metric uses Celsius units and meters/sec
-    imperial uses Fahrenheit units and miles/hour
-
-    "standard" is default units for OWM and is not written in the GET request to speed up data sending
+  [type] Supported types of API is CURRENT and FULL
+    CURRENT https://openweathermap.org/weather-data
+    FULL https://openweathermap.org/api/one-call-api
 
 
 
-  [type] optional (default is "full")
-    supported types of API is "current" and "full"
-
-    current https://openweathermap.org/weather-data
-    full https://openweathermap.org/api/one-call-api
-
+  [units] STANDART, METRIC and IMPERIAL units are available
+    STANDART uses Kelvin units and meters/sec. It's default units for OWM and is not written in the GET request to speed up data sending
+    METRIC uses Celsius units and meters/sec
+    IMPERIAL uses Fahrenheit units and miles/hour
 
 
-  [language] optional (default is "en")
-    Return summary properties in the desired language.
 
-    "en" is default language for OWM and is not written in the GET request to speed up data sending
+  [language] Returns summary properties in the desired language by .getShortStatus(), .getStatus() and .getStatus16()
+    Fully supported languages are:
+      EN: English
+      RU: Russian
 
-    supported languages is:
-      af: Africans
-      ar: Arabic
-      az: Azerbaijani
-      bg: Bulgarian
-      ca: Catalan
-      cs: Czech
-      da: Danish
-      de: German
-      el: Greek
-      en: English
-      eu: Basque
-      fa: Persian (Farsi)
-      fi: Finnish
-      fr: French
-      gl: Galician
-      he: Hebrew
-      hi: Hindi
-      hr: Croatian
-      hu: Hungarian
-      id: Indonesian
-      it: Italian
-      ja: Japanese
-      kr: Korean
-      la: Latvian
-      lt: Lithuanian
-      mk: Macedonian
-      no: Norwegian Bokmål
-      nl: Dutch
-      pl: Polish
-      pt: Portuguese
-      pt_br: Português Brasil
-      ro: Romanian
-      ru: Russian
-      sk: Slovak
-      sl: Slovenian
-      sp, es: Spanish
-      sr: Serbian
-      sv, se: Swedish
-      th: Thai
-      tr: Turkish
-      ua, uk: Ukrainian
-      vi: Vietnamese
-      zh_cn: Chinese Simplified
-      zh-tw: Chinese Traditional
-      zu: Zulu
+    Partial supported languages (getShortStatus in English, getStatus16 is not supported, translations in getStatus are provided by OWM and may be strange) are:
+      AF: Afrikaans
+      AR: Arabic
+      AZ: Azerbaijani
+      BE: Belarussian
+      BG: Bulgarian
+      CA: Catalan
+      CZ: Czech
+      DA: Danish
+      DE: German
+      EL: Greek
+      EU: Basque
+      FA: Persian (Farsi)
+      FI: Finnish
+      FR: French
+      GL: Galician
+      HE: Hebrew
+      HI: Hindi
+      HR: Croatian
+      HU: Hungarian
+      ID: Indonesian
+      IT: Italian
+      JA: Japanese
+      KR: Korean
+      LA: Latvian
+      LT: Lithuanian
+      MK: Macedonian
+      NO: Norwegian
+      NL: Dutch
+      PL: Polish
+      PT: Portuguese
+      PT_BR: Português Brasil
+      SE: Swedish
+      SK: Slovak
+      SL: Slovenian
+      SP: Spanish
+      SQ: Albanian
+      SR: Serbian
+      TH: Thai
+      TR: Turkish
+      UA: Ukrainian
+      VI: Vietnamese
+      ZH_CN: Chinese Simplified
+      ZH_TW: Chinese Traditional
+      ZU: Zulu
 */
