@@ -18,7 +18,7 @@ Library usage
 * `.getIconCode(iconId, begin, end)` is used to get the code of an icon from its internal library ID. This method was added to save RAM.
 * `.getShortStatus(id)` is used to get a simplified description of the weather from its official ID. This method was added to save RAM and to easily edit states if the official ones don't satisfy you.
 * `.getStatus(id)` is used to get a full description of the weather from its official ID. This method was added to save RAM and to easily edit states if the official ones don't satisfy you.
-* `.getStatus16(id)` similar to `.getShortStatus(id)`, but outputs shortened states to 16 characters especially for displays.
+* `.getStatus16(id)` similar to `.getStatus(id)`, but outputs shortened states to 16 characters especially for displays.
 
 Learn how to work with the library with the test example `OWM_for_ESP_Test.ino`. You can also change the logging parameters, connection type (*unsecured* HTTP or *secured* HTTPS), include string variables, number of minutes and hours (for One Call) or change language for conditions translations in the `User_Setup.h` file, located in the library folder.
 
