@@ -4,6 +4,16 @@ OWM_for_ESP is a simple and optimized library to work with OpenWeatherMap. It wo
 
 To use it, you also need to download the JSON parsing library: https://github.com/Bodmer/JSON_Decoder.
 
+## Support for the library has been discontinued 😞
+
+This is due to the [discontinuation](https://openweathermap.org/one-call-transfer) of One Call API 2.5 due to the release of One Call API 3.0. The new policy requires adding a bank card, which is impossible due to sanctions on the Russian banking system. I will not be able to test the changes in the library.
+
+Also, Roskomnadzor (government prohibitions) has started to enable blocking of https connection to OpenWeatherMap at random times few years ago, so getting weather in Russia is becoming unstable.
+
+If you are in Russia, you probably need to consider analogues of this service (or use Current weather only). If you live in another country, you can implement changes yourself to move to One Call API 3.0.
+
+Thank you for using the library. Its development will continue in a few years: besides API improvements, I'm going to deliver my weather station code in Examples folder (it will be completely rewritten to move to ESP32-C3 and add new features (e.g. English language handling)), after which the library will be added to PlatformIO Registry. The new library will be [here](https://mxkmn.github.io/projects/weatherstation).
+
 ## Secure connection
 
 This library supports secure connection using HTTPS, which is enabled by default.
